@@ -287,7 +287,7 @@
     <div class="container-fluid " id="headerimages" style="background-color:#ffffff">
         <img src="images/Si_Th_H_Color.png" style="width: 600px">
     </div>
-    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="250">
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="250"> 
         <div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
