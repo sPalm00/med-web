@@ -289,7 +289,7 @@
     </div>
     <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="250"> 
         <div class="container-fluid">
-			<div class="navbar-header">
+			<div class="navbar-header"> 
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
