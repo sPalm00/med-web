@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>ภาควิชาอายุรศาสตร์ คณะแพทยศาสตร์ศิริราชพยาบาล</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+	body{
+		background-color: #ffffff;
+	}
+	footer{
+		background-color: #104697;
+	}
+	.page-header{
+        border-bottom: 3px solid gold;
+    }
+	.affix{
+		top: 0;
+		width: 100%;
+		z-index: 9999 !important;
+	}
+	.affix + .container-fluid{
+		padding-top: 70px;
+	}
+	.row {padding-top :20px;}
+    #customers th{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+    #customers td{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+        vertical-align: middle;
+    }
+	.navbar {
+		background-color : #104697;
+	}
+	.navbar-inverse .navbar-nav .nav-link {
+    color: #ffffff;
+	}
+	.navbar-inverse .nav-item:hover .nav-link {
+    color: #ffffff;
+	}
+	.navbar-inverse .dropdown-menu {
+    background-color: #3180F5;
+	}
+	.navbar-inverse .dropdown-item {
+    color: #ffffff;
+	}
+	.navbar-inverse .dropdown-item:hover,
+	.navbar-inverse .dropdown-item:focus {
+    color: #ffffff;
+    background-color: rgba(255,255,255,.5);
+	}
+</style>
+<body>
+	<div class="container-fluid " id="headerimages" style="background-color:#ffffff">
+		<img src="images/Si_Th_H_Color.png" style="width: 600px">
+	</div>
+	<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="250">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="index.html" ><i class="fa fa-home"> หน้าหลัก</a></li></i>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown">ข้อมูลองค์กร<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="Information.html">ประวัติภาควิชา</a></li>
+							<li><a class="dropdown-item" href="Information.html#inform">วิสัยทัศน์/พันธกิจ</a></li>
+							<li><a class="dropdown-item" href="structure.html">โครงสร้างการบริหารภาค</a></li>
+							<li><a class="dropdown-item" href="department.html">รายนามหัวหน้าภาค</a></li>
+							<li><a class="dropdown-item" href="Com.html">กรรมการบริหารภาค</a></li>
+							<li><a class="dropdown-item" href="Branch.html">รายระเอียดสาขาวิชา</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown">บุคลากร<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="personnel.html">บุคลากร</a></li>
+								<li><a class="dropdown-item" href="#">เกียรติยศอายุรศาสตร์</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown">ข่าวสาร<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="news.html">ข่าวประชาสัมพันธ์</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวกิจกรรม</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวการศึกษาก่อนปริญญา</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวการศึกษาหลังปริญญา</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="other.html">อื่นๆ</a></li>
+						<li class="nav-item"><a class="nav-link" href="Contact.html">ติดต่อ/สอบถาม</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user"></i> เข้าสู่ระบบ<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<div class="container">
+									<form action="/action_page.php">
+										<div class="form-group row">
+											<div class="col-xs-2">
+												<label for="user">Username:</label>
+												<input type="user" class="form-control" id="user" placeholder="Enter user" name="user" size="20" maxlength="20">
+											</div>
+											<div class="col-xs-3">
+												<label for="pwd">Password:</label>
+												<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" size="20" maxlength="20">
+											</div>
+											<button type="submit" class="btn btn-default">Submit</button>
+										</div>
+									</form>
+								</div>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="page-header">
+				<h3>จำหน่ายหนังสือ</h3>
+			</div>
+			<table id="customers" class="table table-hover">
+				<thead>
+					<tr>
+						<th>หน้าปกหนังสือ</th>
+						<th>รายละเอียดหนังสือ</th>
+						<th>วันที่ลง</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><img src="images/book/b1.jpg" style="width:150px"></td>
+						<td>ขายหนังสือ Gastrointestinal Manifestations of Systemic Diseases <br>ราคาเล่มละ 400 บาท</td>
+						<td>4/6/2558</td>
+					</tr>
+					<tr>
+						<td><img src="images/book/b2.jpg" style="width:150px"></td>
+						<td>ขายหนังสือ Clinical Practice in Gastroenterology 3rd Edition <br>ราคาเล่มละ 500 บาท</td>
+						<td>9/4/2557</td>
+					</tr>
+					<tr>
+						<td><img src="images/book/b3.jpg" style="width:150px"></td>
+						<td>ขายหนังสือ เรื่อง ตำราโรคหืด เล่มละ 350 บาท <br>ติดต่อสาขาวิชาโรคระบบการหายใจและวัณโรค อัษฏางค์ ชั้น 2</td>
+						<td>15/8/2556</td>
+					</tr>
+					<tr>
+						<td><img src="images/book/b4.jpg" style="width:150px"></td>
+						<td>หนังสือ ตำราอายุรศาสตร์ทั่วไป <br>หนังสือราคาเล่มละ 500 บาท ( ค่าจัดส่ง 200 บาท )</td>
+						<td>11/4/2556</td>
+					</tr>
+					<tr>
+						<td><img src="images/book/b5.jpg" style="width:150px"></td>
+						<td>ขายหนังสือเรื่อง โรคหลอดเลือดลำไส้ (Intestinal Vascular Disorders) <br>ราคา 500 บาท</td>
+						<td>2/4/2556</td>
+					</tr>
+					<tr>
+						<td><img src="images/book/b6.jpg" style="width:150px"></td>
+						<td>ตำราอายุรศาสตร์โรคไต 1 สำหรับบุคลากรคณะแพทยศาสตร์ศิริราชพยาบาล <br>ปกอ่อน 400 บาท ปกแข็ง 550 บาท ติดต่อสบอถามได้ที่ 02-419-8383,02-419-7291</td>
+						<td>13/11/2555</td>
+					</tr>            
+				</tbody>
+			</table>
+		</div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-socials">
+                <a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" data-toggle="tooltip" title="Instagram"><i class="fa fa-instagram"></i></a>
+                <a href="#" data-toggle="tooltip" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+            </div>			
+            <div class="footer-bottom">
+                <i>ภาควิชาอายุรศาสตร์ รพ.ศิริราช ตึกอัษฎางค์ ชั้น4 แขวงศิริราช เขตบางกอกน้อย กรุงเทพมหานคร 10700 โทร.02-419-7767-69</i>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

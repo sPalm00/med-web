@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>ภาควิชาอายุรศาสตร์ คณะแพทยศาสตร์ศิริราชพยาบาล</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+	<style>
+    .page-header{
+        border-bottom: 3px solid gold;
+    }
+	body{
+		background-color: #ffffff;
+	}
+	footer{
+		background-color: #104697;
+	}
+	.affix{
+		top: 0;
+		width: 100%;
+		z-index: 9999 !important;
+	}
+	.affix + .container-fluid{
+		padding-top: 70px;
+	}
+	.row{
+		padding-top :20px;
+	}
+	ul.A{
+		list-style-position: outside;
+	}
+	.navbar {
+		background-color : #104697;
+	}
+	.navbar-inverse .navbar-nav .nav-link {
+    color: #ffffff;
+	}
+	.navbar-inverse .nav-item:hover .nav-link {
+    color: #ffffff;
+	}
+	.navbar-inverse .dropdown-menu {
+    background-color: #3180F5;
+	}
+	.navbar-inverse .dropdown-item {
+    color: #ffffff;
+	}
+	.navbar-inverse .dropdown-item:hover,
+	.navbar-inverse .dropdown-item:focus {
+    color: #ffffff;
+    background-color: rgba(255,255,255,.5);
+	}
+</style>
+<body>
+	<div class="container-fluid " id="headerimages" style="background-color:#ffffff">
+		<img src="images/Si_Th_H_Color.png" style="width: 600px">
+	</div>
+	<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="250">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="index.html" ><i class="fa fa-home"> หน้าหลัก</a></li></i>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown">ข้อมูลองค์กร<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="Information.html">ประวัติภาควิชา</a></li>
+							<li><a class="dropdown-item" href="Information.html#inform">วิสัยทัศน์/พันธกิจ</a></li>
+							<li><a class="dropdown-item" href="structure.html">โครงสร้างการบริหารภาค</a></li>
+							<li><a class="dropdown-item" href="department.html">รายนามหัวหน้าภาค</a></li>
+							<li><a class="dropdown-item" href="Com.html">กรรมการบริหารภาค</a></li>
+							<li><a class="dropdown-item" href="Branch.html">รายระเอียดสาขาวิชา</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown">บุคลากร<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="personnel.html">บุคลากร</a></li>
+								<li><a class="dropdown-item" href="#">เกียรติยศอายุรศาสตร์</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown">ข่าวสาร<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="news.html">ข่าวประชาสัมพันธ์</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวกิจกรรม</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวการศึกษาก่อนปริญญา</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวการศึกษาหลังปริญญา</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="other.html">อื่นๆ</a></li>
+						<li class="nav-item"><a class="nav-link" href="Contact.html">ติดต่อ/สอบถาม</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user"></i> เข้าสู่ระบบ<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<div class="container">
+									<form action="/action_page.php">
+										<div class="form-group row">
+											<div class="col-xs-2">
+												<label for="user">Username:</label>
+												<input type="user" class="form-control" id="user" placeholder="Enter user" name="user" size="20" maxlength="20">
+											</div>
+											<div class="col-xs-3">
+												<label for="pwd">Password:</label>
+												<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" size="20" maxlength="20">
+											</div>
+											<button type="submit" class="btn btn-default">Submit</button>
+										</div>
+									</form>
+								</div>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="page-header">
+				<h3>สาขาวิชาในภาควิชาอายุรศาสตร์</h3>
+			</div>
+			<p>ภาควิชาอายุรศาสตร์ คณะแพทยศาสตร์ศิริราชพยาบาล แบ่งสาขาวิชาต่าง ๆ ดังนี้</p>
+			<div class="row">
+				<div class="col-md-6">
+					<ul class="A">
+					<li><a href="BI1.html">สาขาวิชาการบริบาลผู้ป่วยนอก<br>Division of Ambulatory Medicine</a>
+					</li>
+					<br>
+					<li><a href="#">สาขาวิชาความดันโลหิตสูง<br>Division of Hypertension</a>
+					</li>
+					<br>
+					<li><a href="#">สาขาวิชาเคมีบำบัด<br>Division of Oncology</a>
+					</li>
+					<br>
+					<li><a href="#">สาขาวิชาต่อมไร้ท่อและเมตะบอลิสม<br>Division of Endocrinology and Metabolism</a>
+					</li>
+					<br>
+					<li><a href="#">สาขาวิชาโรคติดเชื้อและอายุรศาสตร์เขตร้อน<br>Division of Infectious Diseases and Tropical Medicine</a>
+					</li>
+					<br>
+					<li><a href="#">สาขาวิชาประสาทวิทยา<br>Division of Neurology</a>
+					</li>
+					<br>
+					<li><a href="#">สาขาวิชาโภชนาการคลินิก<br>Division of Nutrition</a>
+					</li>
+					<br>
+					<li><a href="#">สาขาวิชาโรคข้อและรูมาติสซั่ม<br>Division of Rheumatology</a>
+					</li>
+					<br>
+					<li><a href="#">สาขาวิชาโรคภูมิแพ้และอิมมูโนวิทยา<br>Division of Allergy and Clinical Immunology</a>
+					</li>
+					<br>
+					<li><a href="#">สาขาวิชาโรคระบบการหายใจและวัณโรค<br>Division of Respiratory Disease and Tuberculosis</a>
+					</li>
+					<br>
+					<li><a href="#">สาขาวิชาโรคระบบทางเดินอาหาร<br>Division of Gastroenterology</a>
+					</li>
+					<br>
+					<li><a href="#">สาขาวิชาโลหิตวิทยา<br>Division of Hematology</a>
+					</li>
+					<br>
+					<li><a href="#">สาขาวิชาวักกะวิทยา<br>Division of Nephrology</a>
+					</li>
+					<br>
+					<li><a href="#">สาขาวิชาเวชบำบัดวิกฤต<br>Division of Critical Care</a>
+					</li>
+					<br>
+					<li><a href="#">สาขาวิชาเวชพันธุศาสตร์<br>Division of Medical Genetics</a>
+					</li>
+					<br>
+					<li><a href="#">สาขาวิชาหทัยวิทยา<br>Division of Cardiology</a>
+					</li>
+					<br>
+					<li><a href="#">สาขาวิชาอายุรศาสตร์ปัจฉิมวัย<br>Division of Geriatric Medicine</a>
+					</li>
+					<br>
+					<li><a href="#">สาขาวิชาอายุรศาสตร์ทั่วไป<br>Division of General Medicine</a>
+					</ul>
+					</div>
+				</div>
+			</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-socials">
+					<a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a>
+					<a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a>
+					<a href="#" data-toggle="tooltip" title="Instagram"><i class="fa fa-instagram"></i></a>
+					<a href="#" data-toggle="tooltip" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+				</div>			
+				<div class="footer-bottom">
+					<i>ภาควิชาอายุรศาสตร์ รพ.ศิริราช ตึกอัษฎางค์ ชั้น4 แขวงศิริราช เขตบางกอกน้อย กรุงเทพมหานคร 10700 โทร.02-419-7767-69</i>
+				</div>
+			</div>
+		</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

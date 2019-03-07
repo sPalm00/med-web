@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>ภาควิชาอายุรศาสตร์ คณะแพทยศาสตร์ศิริราชพยาบาล</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    body{
+		background-color: #ffffff;
+	}
+	footer{
+		background-color: #104697;
+	}
+    .page-header{
+        border-bottom: 3px solid gold;
+    }
+	.affix{
+		top: 0;
+		width: 100%;
+		z-index: 9999 !important;
+	}
+	.affix + .container-fluid{
+		padding-top: 70px;
+	}
+	.row {padding-top :20px;}
+	.navbar {
+		background-color : #104697;
+	}
+	.navbar-inverse .navbar-nav .nav-link {
+    color: #ffffff;
+	}
+	.navbar-inverse .nav-item:hover .nav-link {
+    color: #ffffff;
+	}
+	.navbar-inverse .dropdown-menu {
+    background-color: #3180F5;
+	}
+	.navbar-inverse .dropdown-item {
+    color: #ffffff;
+	}
+	.navbar-inverse .dropdown-item:hover,
+	.navbar-inverse .dropdown-item:focus {
+    color: #ffffff;
+    background-color: rgba(255,255,255,.5);
+	}
+</style>
+<body>
+	<div class="container-fluid " id="headerimages" style="background-color:#ffffff">
+		<img src="images/Si_Th_H_Color.png" style="width: 600px">
+	</div>
+	<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="250">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="index.html" ><i class="fa fa-home"> หน้าหลัก</a></li></i>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown">ข้อมูลองค์กร<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="Information.html">ประวัติภาควิชา</a></li>
+							<li><a class="dropdown-item" href="Information.html#inform">วิสัยทัศน์/พันธกิจ</a></li>
+							<li><a class="dropdown-item" href="structure.html">โครงสร้างการบริหารภาค</a></li>
+							<li><a class="dropdown-item" href="department.html">รายนามหัวหน้าภาค</a></li>
+							<li><a class="dropdown-item" href="Com.html">กรรมการบริหารภาค</a></li>
+							<li><a class="dropdown-item" href="Branch.html">รายระเอียดสาขาวิชา</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown">บุคลากร<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="personnel.html">บุคลากร</a></li>
+								<li><a class="dropdown-item" href="#">เกียรติยศอายุรศาสตร์</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown">ข่าวสาร<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="news.html">ข่าวประชาสัมพันธ์</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวกิจกรรม</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวการศึกษาก่อนปริญญา</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวการศึกษาหลังปริญญา</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="other.html">อื่นๆ</a></li>
+						<li class="nav-item"><a class="nav-link" href="Contact.html">ติดต่อ/สอบถาม</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user"></i> เข้าสู่ระบบ<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<div class="container">
+									<form action="/action_page.php">
+										<div class="form-group row">
+											<div class="col-xs-2">
+												<label for="user">Username:</label>
+												<input type="user" class="form-control" id="user" placeholder="Enter user" name="user" size="20" maxlength="20">
+											</div>
+											<div class="col-xs-3">
+												<label for="pwd">Password:</label>
+												<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" size="20" maxlength="20">
+											</div>
+											<button type="submit" class="btn btn-default">Submit</button>
+										</div>
+									</form>
+								</div>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-xs-12">
+                    <div class="page-header">
+                        <h3>เบอร์โทรศัพท์ / Tel</h3>
+                    </div>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>เบอร์</th>
+                                <th>สถานที่ติดต่อ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0-2419-7000</td>
+                                <td>Call Center โรงพยาบาลศิริราช</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="page-header">
+                        <h3>เบอร์โทรศัพท์ภายใน</h3>
+                    </div>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>เบอร์</th>
+                                <th>สาขาวิชา</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0-2419-719</td>
+                                <td>สาขาวิชาการบริบาลผู้ป่วยนอก</td>
+                            </tr>
+                            <tr>
+                                <td>0-2419-7790-1</td>
+                                <td>สาขาวิชาความดันโลหิตสูง</td>
+                            </tr>
+                            <tr>
+                                <td>0-2419-4489<br>0-2419-4495</td>
+                                <td>สาขาวิชาเคมีบำบัด</td>
+                            </tr>
+                            <tr>
+                                <td>0-2419-7800<br>0-2419-7792<br>0-2419-7799</td>
+                                <td>สาขาวิชาต่อมไร้ท่อและเมตะบอลิสม</td>
+                            </tr>
+                            <tr>
+                                <td>0-2419-7101-2<br>0-2419-7105<br>0-2411-1103</td>
+                                <td>สาขาวิชาประสาทวิทยา<br><br>Fax.</td>
+                            </tr>
+                            <tr>
+                                <td>0-2419-7775-6</td>
+                                <td>สาขาวิชาโรคข้อและรูมาติสซั่ม</td>
+                            </tr>
+                            <tr>
+                                <td>0-2419-7783-4</td>
+                                <td>สาขาวิชาโรคติดเชื้อและอายุรศาสตร์เขตร้อน</td>
+                            </tr>
+                            <tr>
+                                <td>0-2419-8263</td>
+                                <td>สาขาวิชาโรคภูมิแพ้และอิมมูโนวิทยา</td>
+                            </tr>
+                            <tr>
+                                <td>0-2419-7282-3</td>
+                                <td>สาขาวิชาโรคระบบทางเดินอาหาร</td>
+                            </tr>
+                            <tr>
+                                <td>0-2419-4448-9</td>
+                                <td>สาขาวิชาโลหิตวิทยา</td>
+                            </tr>
+                            <tr>
+                                <td>0-2419-8383</td>
+                                <td>สาขาวิชาวักกะวิทยา</td>
+                            </tr>
+                            <tr>
+                                <td>0-2419-8597<br>0-2419-8354</td>
+                                <td>สาขาวิชาเวชบำบัดวิกฤต</td>
+                            </tr>
+                            <tr>
+                                <td>0-2419-6630</td>
+                                <td>สาขาวิชาเวชพันธุศาสตร์</td>
+                            </tr>
+                            <tr>
+                                <td>0-2419-6104-5</td>
+                                <td>สาขาวิชาหทัยวิทยา</td>
+                            </tr>
+                            <tr>
+                                <td>0-2419-7782<br>0-2419-7196</td>
+                                <td>สาขาวิชาอายุรศาสตร์ปัจฉิมวัย</td>
+                            </tr>
+                            <tr>
+                                <td>0-2419-9216<br>0-2419-8772</td>
+                                <td>สาขาวิชาเวชศาสตร์ฉุกเฉิน</td>
+                            </tr>
+                            <tr>
+                                <td>0-2419-7191</td>
+                                <td>สาขาวิชาโภชนาการคลินิก</td>
+                            </tr>
+                            <tr>
+                                <td>0-2419-7757-8</td>
+                                <td>สาขาวิชาโรคระบบการหายใจและวัณโรค</td>
+                            </tr>
+                            <tr>
+                                <td>0-2419-6626</td>
+                                <td>หน่วยระบาดวิทยาคลินิก</td>
+                            </tr>
+                            <tr>
+                                <th>เบอร์</th>
+                                <th>สำนักงานภาควิชาอายุรศาสตร์</th>
+                            </tr>
+                            <tr>
+                                <td>02-419-7767-69<br>02-419-7774,02-419-8581<br>02-419-8701 ต่อ</td>
+                                <td>อัตโนมัติ 6 เลขหมาย</td>
+                            </tr>
+                            <tr>
+                                <td>101</td>
+                                <td>บริหารสำนักงานภาควิชาอายุรศาสตร์</td>
+                            </tr>
+                            <tr>
+                                <td>102</td>
+                                <td>หน่วยงบประมาณพัสดุและการเงิน</td>
+                            </tr>
+                            <tr>
+                                <td>103</td>
+                                <td>หน่วยบุคคลและการจัดการความรู้</td>
+                            </tr>
+                            <tr>
+                                <td>108</td>
+                                <td>หน่วยวิจัยและวิชาการ</td>
+                            </tr>
+                            <tr>
+                                <td>109</td>
+                                <td>หน่วยบริการและพัฒนาคุณภาพ</td>
+                            </tr>
+                            <tr>
+                                <td>111</td>
+                                <td>หน่วยนโยบายและแผน</td>
+                            </tr>
+                            <tr>
+                                <td>112</td>
+                                <td>หน่วยสอบทานทรัพยากรคุณภาพ</td>
+                            </tr>
+                            <tr>
+                                <td>114</td>
+                                <td>เลขานุการภาควิชาอายุรศาสตร์</td>
+                            </tr>
+                            <tr>
+                                <td>7781</td>
+                                <td>หน่วยเวชระเบียน</td>
+                            </tr>
+                            <tr>
+                                <td>0-2419-7778<br>0-2419-8302<br>0-2419-9695<br>0-2411-1103</td>
+                                <td>หน่วยการศึกษา (ก่อนปริญญา และหลังปริญญา)<br><br><br>Fax.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="page-header">
+                        <h3>ที่อยู่</h3>
+                    </div>
+                    <p>ภาควิชาอายุรศาสตร์ คณะแพทยศาสตร์ศิริราชพยาบาล
+                        เลขที่ 2 ถนนพรานนก แขวงศิริราช เขตบางกอกน้อย กรุงเทพ 10700</p>
+                        <div class="page-header">
+                            <h3>แผนที่</h3>
+                        </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d665.5719421790909!2d100.48572074415573!3d13.756689571407076!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4197b0f6db6461c5!2z4Lig4Liy4LiE4Lin4Li04LiK4Liy4Lit4Liy4Lii4Li44Lij4Lio4Liy4Liq4LiV4Lij4LmM!5e0!3m2!1sth!2sth!4v1548059813495" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-socials">
+                    <a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" data-toggle="tooltip" title="Instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="#" data-toggle="tooltip" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+                </div>
+                <div class="footer-bottom">
+                    <i>ภาควิชาอายุรศาสตร์ รพ.ศิริราช ตึกอัษฎางค์ ชั้น4 แขวงศิริราช เขตบางกอกน้อย กรุงเทพมหานคร 10700 โทร.02-419-7767-69</i>
+                </div>
+            </div>
+        </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

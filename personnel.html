@@ -1,0 +1,2188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>ภาควิชาอายุรศาสตร์ คณะแพทยศาสตร์ศิริราชพยาบาล</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    body{
+		background-color: #ffffff;
+	}
+	footer{
+		background-color: #104697;
+	}
+    .page-header{
+        border-bottom: 3px solid gold;
+    }
+	.affix{
+		top: 0;
+		width: 100%;
+		z-index: 9999 !important;
+	}
+	.affix + .container-fluid{
+		padding-top: 70px;
+	}
+	.row {padding-top :20px;}
+	.navbar {
+		background-color : #104697;
+	}
+	.navbar-inverse .navbar-nav .nav-link {
+    color: #ffffff;
+	}
+	.navbar-inverse .nav-item:hover .nav-link {
+    color: #ffffff;
+	}
+	.navbar-inverse .dropdown-menu {
+    background-color: #3180F5;
+	}
+	.navbar-inverse .dropdown-item {
+    color: #ffffff;
+	}
+	.navbar-inverse .dropdown-item:hover,
+	.navbar-inverse .dropdown-item:focus {
+    color: #ffffff;
+    background-color: rgba(255,255,255,.5);
+	}
+</style>
+<body>
+	<div class="container-fluid " id="headerimages" style="background-color:#ffffff">
+		<img src="images/Si_Th_H_Color.png" style="width: 600px">
+	</div>
+	<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="300">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="index.html" ><i class="fa fa-home"> หน้าหลัก</a></li></i>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown">ข้อมูลองค์กร<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="Information.html">ประวัติภาควิชา</a></li>
+							<li><a class="dropdown-item" href="Information.html#inform">วิสัยทัศน์/พันธกิจ</a></li>
+							<li><a class="dropdown-item" href="structure.html">โครงสร้างการบริหารภาค</a></li>
+							<li><a class="dropdown-item" href="department.html">รายนามหัวหน้าภาค</a></li>
+							<li><a class="dropdown-item" href="Com.html">กรรมการบริหารภาค</a></li>
+							<li><a class="dropdown-item" href="Branch.html">รายระเอียดสาขาวิชา</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown">บุคลากร<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="personnel.html">บุคลากร</a></li>
+								<li><a class="dropdown-item" href="#">เกียรติยศอายุรศาสตร์</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown">ข่าวสาร<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="news.html">ข่าวประชาสัมพันธ์</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวกิจกรรม</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวการศึกษาก่อนปริญญา</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวการศึกษาหลังปริญญา</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="other.html">อื่นๆ</a></li>
+						<li class="nav-item"><a class="nav-link" href="Contact.html">ติดต่อ/สอบถาม</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user"></i> เข้าสู่ระบบ<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<div class="container">
+									<form action="/action_page.php">
+										<div class="form-group row">
+											<div class="col-xs-2">
+												<label for="user">Username:</label>
+												<input type="user" class="form-control" id="user" placeholder="Enter user" name="user" size="20" maxlength="20">
+											</div>
+											<div class="col-xs-3">
+												<label for="pwd">Password:</label>
+												<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" size="20" maxlength="20">
+											</div>
+											<button type="submit" class="btn btn-default">Submit</button>
+										</div>
+									</form>
+								</div>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+        <div class="container">
+            <div class="page-header">
+                <h3>ที่ปรึกษา</h3>
+            </div>
+            <li><a href="#P" data-toggle="collapse">อาจารย์ที่ปรึกษา</a></li>
+            <div id="P" class="collapse">
+                <div class="row">
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/A/a1.png" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. ไพโรจน์ สินลารัตน์<br>สาขาวิชาเคมีบำบัด</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a2.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.เกียรติคุณ พญ. วรรณี นิธิยานันท์<br>สาขาวิชาต่อมไร้ท่อและเมตะบอลิสม</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/A/a3.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.เกียรติคุณ นพ. อมร ลีลารัศมี<br>สาขาวิชาโรคติดเชื้อและอายุรศาสตร์เขตร้อน<br>ศาสตราจารย์ระดับ11</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/A/a4.png" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.เกียรติคุณ พญ. นลินี อัศวโภคี <br>สาขาวิชาโรคติดเชื้อและอายุรศาสตร์เขตร้อน</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a5.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.คลินิกเกียรติคุณ นพ. ปัญญ บุรณศิริ <br>สาขาวิชาประสาทวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a6.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.คลินิก นพ. สุรศักดิ์ นิลกานุวงศ์ <br>สาขาวิชาโรคข้อและรูมาติสซั่ม</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a7.gif" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.นพ. สุชัย เจริญรัตนกุล <br>สาขาวิชาโรคระบบการหายใจและวัณโรค</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a8.png" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.เกียรติคุณ นพ. ประพาฬ ยงใจยุทธ <br>สาขาวิชาโรคระบบการหายใจและวัณโรค</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a9.png" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.เกียรติคุณ พญ. เจียมจิตต์ ดำรงศักดิ์ <br>สาขาวิชาโรคระบบทางเดินอาหาร</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a10.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. สถาพร มานัสสถิตย์ <br>สาขาวิชาโรคระบบทางเดินอาหาร</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a11.png"  style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.เกียรติคุณ พญ. อรพรรณ ชินะภัค <br>สาขาวิชาโรคระบบทางเดินอาหาร</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a12.gif" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.พญ. สุมิตร วัฒนวิจารณ์ <br>สาขาวิชาโลหิตวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a13.gif" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.เกียรติคุณ พญ. ธัญญารัตน์ ธีรพรเลิศรัฐ <br>สาขาวิชาวักกะวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a14.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.คลินิก นพ. สุพัฒน์ วาณิชย์การ <br>สาขาวิชาวักกะวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                                <div class="post-image">
+                                    <img src="images/a/a15.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.เกียรติคุณ นพ. ยงยุทธ สหัสกุล <br>สาขาวิชาหทัยวิทยา</h4>
+                            </div>
+                        </article>   
+                    </div>
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a16.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.เกียรติคุณ นพ. อภิชาติ วิชญาณรัตน์ <br>สาขาวิชาต่อมไร้ท่อและเมตะบอลิสม</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a17.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.เกียรติคุณ นพ. สาธิต วรรณแสง <br>สาขาวิชาต่อมไร้ท่อและเมตะบอลิสม</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a18.png" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.เกียรติคุณ นพ. สมหวัง ด่านชัยวิจิตร <br>สาขาวิชาโรคติดเชื้อและอายุรศาสตร์เขตร้อน</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a19.png" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.นพ. สุรพล กอบวรรธนะกุล <br>สาขาวิชาโรคติดเชื้อและอายุรศาสตร์เขตร้อน</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a20.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.พญ. เล็ก ปริวิสุทธิ์ <br>สาขาวิชาโรคข้อและรูมาติสซั่ม</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a21.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.เกียรติคุณ นพ. อรรถ นานา <br>สาขาวิชาโรคระบบการหายใจและวัณโรค</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a22.png" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.เกียรติคุณ นพ. รังสรรค์ ปุษปาคม <br>สาขาวิชาโรคระบบการหายใจและวัณโรค</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a23.jpg" style="width:100px">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="post-header">ศ.เกียรติคุณ พญ. คุณ นันทา มานะเนตร์ <br>สาขาวิชาโรคระบบการหายใจและวัณโรค</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a24.png" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.นพ. สวัสดิ์ หิตะนันท์ <br>สาขาวิชาโรคระบบทางเดินอาหาร</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a25.png" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.เกียรติคุณ พญ. ศศิประภา บุญญพิสิฏฐ์ <br>สาขาวิชาโรคระบบทางเดินอาหาร</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a26.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.เกียรติคุณ นพ. เติมชัย ไชยนุวัติ <br>สาขาวิชาโรคระบบทางเดินอาหาร</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a27.png" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.เกียรติคุณ พญ. สุคนธ์ วิสุทธิพันธ์ <br>สาขาวิชาโลหิตวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a28.png" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.เกียรติคุณ นพ. สง่า นิลวรางกูร <br>สาขาวิชาวักกะวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a29.gif" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.เกียรติคุณ พญ. จินตนา ศิรินาวิน <br>สาขาวิชาเวชพันธุศาสตร์</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/a/a30.png" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.เกียรติคุณ นพ. วิเชียร ทองแตง <br>สาขาวิชาหทัยวิทยา</h4>                    
+                            </div>
+                        </article>      
+                    </div>
+                </div>
+            </div>
+            <div class="page-header">
+                <h3>สายวิชาการ</h3>
+            </div>
+            <li><a href="#A1" data-toggle="collapse">ศาสตราจารย์</a></li>
+            <div id="A1" class="collapse">
+                <div class="row">
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/a1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.พญ. ยุพิน ศุพุทธมงคล <br>สาขาวิชาโรคติดเชื้อและอายุรศาสตร์เขตร้อน<br>ศาสตราจารย์ระดับ11</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/a2.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.นพ. รุ่งโรจน์ กฤตยพงษ์ <br>สาขาวิชาหทัยวิทยา<br>ศาสตราจารย์ระดับ11</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/a3.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.เกียรติคุณ ดร. นพ. พีระ บูรณะกิจเจริญ <br>สาขาวิชาความดันโลหิตสูง</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/a4.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.นพ. สุทิน ศรีอัษฎาพร <br>สาขาวิชาต่อมไร้ท่อและเมตะบอลิสม</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/a5.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.นพ. วิษณุ ธรรมลิขิตกุล <br>สาขาวิชาโรคติดเชื้อและอายุรศาสตร์เขตร้อน<br>ศาสตราจารย์ระดับ11</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/a6.jpg" style="width:100px">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="post-header">ศ.นพ. ชัยรัตน์ ฉายากุล <br>สาขาวิชาวักกะวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/a7.jpg" class="media-object" style="width:100px">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="post-header">ศ.ดร.นพ. กิตติพงศ์ มณีโชติสุวรรณ <br>สาขาวิชาโรคระบบการหายใจและวัณโรค</h4>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/a8.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.ดร.นพ. เกรียงศักดิ์ วารีแสงทิพย์ <br>สาขาวิชาวักกะวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/a9.jpg" class="media-object" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.นพ. มานพ พิทักษ์ภากร <br>สาขาวิชาเวชพันธุศาสตร์</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/a10.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.คลินิก นพ. อุดม คชินทร <br>สาขาวิชาโรคระบบทางเดินอาหาร</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/a11.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.คลินิก นพ. ประดิษฐ์ ปัญจวีณิน <br>สาขาวิชาหทัยวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/a12.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.นพ. วันชัย วนะชิวนาวิน <br>สาขาวิชาโลหิตวิทยา<br>ศาสตราจารย์ระดับ11</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/a13.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.ดร.พญ. จิรายุ เอื้อวรากุล <br>สาขาวิชาโลหิตวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/a14.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ศ.พญ. ธนัญญา บุณยศิรินันท์ <br>สาขาวิชาหทัยวิทยา</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <li><a href="#A2" data-toggle="collapse">รองศาสตราจารย์</a></li>
+            <div id="A2" class="collapse">
+                <div class="row">
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.พญ. ปรียานุช แย้มวงษ์ <br>สาขาวิชาโภชนาการคลินิก</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b2.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. นิธิพัฒน์ เจียรกุล <br>สาขาวิชาโรคระบบการหายใจและวัณโรค</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b3.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.พญ. กนกวรรณ บุญญพิสิฎฐ์ <br>สาขาวิชาประสาทวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b4.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.พญ. รณิษฐา รัตนะรัต <br>สาขาวิชาเวชบำบัดวิกฤต</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b5.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.พญ. วราลักษณ์ ศรีนนท์ประเสริฐ <br>สาขาวิชาอายุรศาสตร์ปัจฉิมวัย</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b6.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.พญ. พจมาน พิศาลประภา <br>สาขาวิชาการบริบาลผู้ป่วยนอก</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b7.jpg"  style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. ไชยรัตน์ เพิ่มพิกุล <br>สาขาวิชาเวชบำบัดวิกฤต</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b8.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. รุ่งนิรันดร์ ประดิษฐสุวรรณ <br>สาขาวิชาอายุรศาสตร์ปัจฉิมวัย</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b9.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. ธวัชชัย พีรพัฒน์ดิษฐ์ <br>สาขาวิชาต่อมไร้ท่อและเมตะบอลิสม</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b10.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. สุพจน์ พงศ์ประสบชัย <br>สาขาวิชาโรคระบบทางเดินอาหาร</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b11.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. ยงชัย นิละนนท์ <br>สาขาวิชาประสาทวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b12.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. ดำรัส ตรีสุโกศล <br>สาขาวิชาหทัยวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b13.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.พญ. ปวีณา เชี่ยวชาญวิศวกิจ <br>สาขาวิชาโรคข้อและรูมาติสซั่ม</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b14.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. อรรถพงศ์ วงศ์วิวัฒน์ <br>สาขาวิชาวักกะวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b15.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. วันชัย เดชสมฤทธิ์ฤทัย <br>สาขาวิชาโรคระบบการหายใจและวัณโรค</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b16.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. ชยวี เมืองจันทร์ <br>สาขาวิชาโรคข้อและรูมาติสซั่ม</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b17.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.พญ. นันทกร ทองแตง <br>สาขาวิชาต่อมไร้ท่อและเมตะบอลิสม</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b18.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. พูนทรัพย์ วงศ์สุรเกียรติ์ <br>สาขาวิชาโรคระบบการหายใจและวัณโรค</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b19.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.ดร.นพ. เมธี ชยะกุลคีรี <br>สาขาวิชาโรคติดเชื้อและอายุรศาสตร์เขตร้อน</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b20.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.พญ. วิวรรณ ทังสุบุตร <br>สาขาวิชาหทัยวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b21.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.ดร.พญ. ภิญโญ รัตนาอัมพวัลย์ <br>สาขาวิชาโรคติดเชื้อและอายุรศาสตร์เขตร้อน</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b22.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.ดร.พญ. เบญจมาศ ช่วยชู <br>สาขาวิชาโรคระบบการหายใจและวัณโรค</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b23.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.พญ. วรางคณา บุญญพิสิฏฐ์ <br>สาขาวิชาหทัยวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b24.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. วัฒนชัย โชตินัยวัตรกุล <br>สาขาวิชาประสาทวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b25.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="media-headin">รศ.พญ. ณสิกาญจน์ อังคเศกวินัย <br>สาขาวิชาโรคติดเชื้อและอายุรศาสตร์เขตร้อน</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b26.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. สัชชนะ พุ่มพฤกษ์ <br>สาขาวิชาหทัยวิทยา</h4>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b27.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. ทวีศักดิ์ แทนวันดี <br>สาขาวิชาโรคระบบทางเดินอาหาร</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b28.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. ณัฐเชษฐ์ เปล่งวิทยา <br>สาขาวิชาต่อมไร้ท่อและเมตะบอลิสม</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b29.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. ต่อพงษ์ ทองงาม <br>สาขาวิชาโรคภูมิแพ้และภูมิคุ้มกัน</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b30.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.พญ. วีรนุช รอบสันติสุข <br>สาขาวิชาความดันโลหิตสูง</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b31.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.พญ. วันรัชดา คัชมาตย์ <br>สาขาวิชาโรคข้อและรูมาติสซั่ม</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b32.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. เชิดชัย นพมณีจำรัสเลิศ <br>สาขาวิชาการบริบาลผู้ป่วยนอก</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b33.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">	รศ.พญ. นาราพร ประยูรวิวัฒน์ <br>สาขาวิชาประสาทวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b34.jpg" style="width:100px">
+                            </div>
+                            <div class="posta-body">
+                                <h4 class="post-header">รศ.นพ. สมชาย ลีลากุศลวงศ์ <br>สาขาวิชาโรคระบบทางเดินอาหาร</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b35.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. สุรัตน์ ทองอยู่ <br>สาขาวิชาเวชบำบัดวิกฤต</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b36.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.พญ. ศุทธินี อิทธิเมฆินทร์ <br>สาขาวิชาเคมีบำบัด</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b37.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. แจ่มศักดิ์ ไชยคุนา <br>สาขาวิชาโรคระบบการหายใจและวัณโรค</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b38.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.พญ. อภิรดี ศรีวิจิตรกมล <br>สาขาวิชาต่อมไร้ท่อและเมตะบอลิสม</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b39.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. พูลชัย จรัสเจริญวิทยา <br>สาขาวิชาโรคระบบทางเดินอาหาร</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b40.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.พญ. วรพรรณ เสนาณรงค์ <br>สาขาวิชาประสาทวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b41.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. เดโช จักราพานิชกุล <br>สาขาวิชาหทัยวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b42.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.พญ. ระวีวรรณ เลิศวัฒนารักษ์ <br>สาขาวิชาต่อมไร้ท่อและเมตะบอลิสม</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                    <img src="images/b/b43.jpg" style="width:100px">
+                                </div>
+                                <div class="post-body">
+                                    <h4 class="post-header">รศ.นพ. เรวัตร พันธุ์กิ่งทองคำ <br>สาขาวิชาหทัยวิทยา</h4>
+                                </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b44.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">	รศ.พญ. นนทลี เผ่าสวัสดิ์ <br>สาขาวิชาโรคระบบทางเดินอาหาร</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b45.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">	รศ.นพ. ทวี ชาญชัยรุจิรา <br>สาขาวิชาวักกะวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b46.jpg" class="media-object" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.พญ. พรพรรณ กู้มานะชัย <br>สาขาวิชาโรคติดเชื้อและอายุรศาสตร์เขตร้อน</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b47.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. วรายุ ปรัชญกุล <br>สาขาวิชาโรคระบบทางเดินอาหาร</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b48.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. สิทธิ์ สาธรสุเมธี <br>สาขาวิชาประสาทวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b49.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.พญ. สุรีย์ สมประดีกุล <br>สาขาวิชาโรคระบบการหายใจและวัณโรค</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b50.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. <br>วัชรศักดิ์ โชติยะปุตตะ สาขาวิชาโรคระบบทางเดินอาหาร</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b51.jpg" style="width:100px">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="post-header">รศ.พญ. นิธิมา รัตนะสิทธิ์ <br>สาขาวิชาหทัยวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/b52.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รศ.นพ. ณัฐวุฒิ วงษ์ประภารัตน์ <br>สาขาวิชาหทัยวิทยา</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <li><a href="#A3" data-toggle="collapse">ผู้ช่วยศาสตราจารย์</a></li>
+            <div id="A3" class="collapse">
+                <div class="row">
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.นพ. สนั่น วิสุทธิศักดิ์ชัย <br>สาขาวิชาโลหิตวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c2.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.พญ. จารุวรรณ เอกวัลลภ <br>สาขาวิชาเคมีบำบัด</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c3.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.นพ. พรพจน์ เปรมโยธิน <br>สาขาวิชาโภชนาการคลินิก</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c4.jpg" tyle="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.นพ. ยงค์ รงค์รุ่งเรือง <br>สาขาวิชาโรคติดเชื้อและอายุรศาสตร์เขตร้อน</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c5.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.พญ กฤติยา กอไพศาล <br>สาขาวิชาเคมีบำบัด</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c6.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.นพ. ธีระ ฤชุตระกูล <br>สาขาวิชาโลหิตวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c7.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.พญ. ศิวะพร ไชยนุวัติ <br>สาขาวิชาโรคระบบทางเดินอาหาร</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c8.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.นพ. ธาดา คุณาวิศรุต <br>สาขาวิชาต่อมไร้ท่อและเมตะบอลิสม</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c9.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.พญ. ไกรวิพร เกียรติสุนทร <br>สาขาวิชาวักกะวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c10.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.พญ. มณฑิรา มณีรัตนะพร <br>สาขาวิชาโรคระบบทางเดินอาหาร</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c11.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.นพ. ปรัชญา ศรีวานิชภูมิ <br>สาขาวิชาประสาทวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c12.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="mpost-header">ผศ.นพ. ศุภฤกษ์ ดิษยบุตร <br>สาขาวิชาโรคระบบการหายใจและวัณโรค</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c13.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.นพ. นัฐสิทธิ์ ลาภปริสุทธิ <br>สาขาวิชาวักกะวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c14.jpg" cstyle="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.นพ. อดิศักดิ์ มณีไสย <br>สาขาวิชาหทัยวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c15.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.นพ. วีรภัทร โอวัฒนาพานิช <br>สาขาวิชาโลหิตวิทยา</h4>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c16.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.นพ. นพดล ศิริธนารัตนกุล <br>สาขาวิชาโลหิตวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c17.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.พญ. เอมวลี อารมย์ดี <br>สาขาวิชาโรคข้อและรูมาติสซั่ม</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c18.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.พญ. อัจฉรา กุลวิสุทธิ์ <br>สาขาวิชาโรคข้อและรูมาติสซั่ม</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c19.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.นพ. วีรชัย ศรีวณิชชากร <br>สาขาวิชาการบริบาลผู้ป่วยนอก</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c20.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.นพ. ธเนศ ชัยสถาผล <br>สาขาวิชาการบริบาลผู้ป่วยนอก</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c21.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.พญ. บุณฑริกา สุวรรณวิบูลย์ <br>สาขาวิชาโลหิตวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c22.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.นพ. ยิ่งยง ชินธรรมมิตร์ <br>สาขาวิชาโลหิตวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c23.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.พญ. รัตนา ชวนะสุนทรพจน์ <br>สาขาวิชาวักกะวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c24.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.พญ. เมทินี กิตติโพวานนท์ <br>สาขาวิชาหทัยวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c25.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.นพ. รุจิภาส สิริจตุภัทร <br>สาขาวิชาโรคติดเชื้อและอายุรศาสตร์เขตร้อน</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c26.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.นพ. ชัชวาล รัตนบรรณกิจ <br>สาขาวิชาประสาทวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c27.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.นพ. อนุภพ จิตต์เมือง <br>สาขาวิชาโรคติดเชื้อและอายุรศาสตร์เขตร้อน</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c28.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.นพ. นัฐพล ฤทธิ์ทยมัย <br>สาขาวิชาโรคระบบการหายใจและวัณโรค</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/c29.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ผศ.นพ. จุลจักร ลิ่มศรีวิไล <br>สาขาวิชาโรคระบบทางเดินอาหาร</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <li><a href="#A4" data-toggle="collapse">อาจารย์แพทย์</a></li>
+            <div id="A4" class="collapse">
+                <div class="row">
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. ชนินทร์ ลิ่มวงศ์ <br>สาขาวิชาเวชพันธุศาสตร์</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d2.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. สมเกียรติ วสุวัฏฏกุล <br>สาขาวิชาวักกะวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d3.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.พญ. จินตนา อาศนะเสน<br>สาขาวิชาอายุรศาสตร์ปัจฉิมวัย</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d4.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.พญ. กุสุมา ไชยสูตร <br>สาขาวิชาโภชนาการคลินิก</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d5.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. เอกรินทร์ ภูมิพิเชฐ <br>สาขาวิชาเวชบำบัดวิกฤต</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d6.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.พญ. ปทุมพร สุรอรุณสัมฤทธิ์ <br>สาขาวิชาอายุรศาสตร์ปัจฉิมวัย</h4>
+                            </div>
+                        </article>                        
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d7.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. ชัยวัฒน์ วชิรศักดิ์ศิริ <br>สาขาวิชาการบริบาลผู้ป่วยนอก</h4>
+                            </div>
+                        </article>                        
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d8.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.พญ. ศิริโสภา เตชะวัฒนวรรณา <br>สาขาวิชาเคมีบำบัด</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d9.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. ปรีชา ธำรงไพโรจน์ <br>สาขาวิชาเวชบำบัดวิกฤต</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d10.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.พญ. ปวีณา ชุณหโรจน์ฤทธิ์ <br>สาขาวิชาต่อมไร้ท่อและเมตะบอลิสม</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d11.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.พญ ชลธิชา เอื้อสมหวัง <br>สาขาวิชาการบริบาลผู้ป่วยนอก</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d12.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. ลักษมันต์ ธรรมลิขิตกุล <br>สาขาวิชาเคมีบำบัด</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d13.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. ทวีศักดิ์ วรรณชาลี <br>สาขาวิชาต่อมไร้ท่อและเมตะบอลิสม</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d14.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.พญ. นลินี เปรมัษเฐียร <br>สาขาวิชาวักกะวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d15.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.พญ. สิรินาถ สิรินทร์วราวงศ์ <br>สาขาวิชาต่อมไร้ท่อและเมตะบอลิสม</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d16.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. สุพจน์ นิ่มอนงค์ <br>สาขาวิชาโรคระบบทางเดินอาหาร</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d17.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. ศรัทธาวุธ วงษ์เวียงจันทร์ <br>สาขาวิชาประสาทวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d18.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.พญ. ปีณิดา สกุลรัตนศักดิ์ <br>สาขาวิชาวักกะวิทยา	</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d19.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.พญ. กฤติกา ธีระพันธ์เจริญ <br>สาขาวิชาโรคระบบการหายใจและวัณโรค</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d20.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.พญ. จิราพร จิตประไพกุลศาล<br>สาขาวิชาประสาทวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d21.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.พญ. อวยพร เค้าสมบัติวัฒนา <br>สาขาวิชาโรคระบบทางเดินอาหาร</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d22.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. สุกิจ รักษาสุข <br>สาขาวิชาวักกะวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d23.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.พญ. กรชนก วารีแสงทิพย์ <br>สาขาวิชาวักกะวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d24.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.พญ. ศรีสกุล จิรกาญจนากร <br>สาขาวิชาหทัยวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d25.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. สาธิต เจนวณิชสถาพร <br>สาขาวิชาหทัยวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d26.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. นราธิป ชุณหะมณีวัฒน์  <br>สาขาวิชาหทัยวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d27.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. วนัส ไชยตรี<br>สาขาวิชาการบริบาลผู้ป่วยนอก	</h4>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d28.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. มงคล สมพรรัตนพันธ์ <br>สาขาวิชาโรคภูมิแพ้และภูมิคุ้มกัน</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d29.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. นพดล โสภารัตนาไพศาล <br>สาขาวิชาเคมีบำบัด</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d30.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.พญ. สิริสวัสดิ์ วันทอง <br>สาขาวิชาความดันโลหิตสูง</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d31.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. ชวลิต โชติเรืองนภา <br>สาขาวิชาความดันโลหิตสูง</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d32.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.พญ. ฐิติมา ว่องวิริยะวงศ์ <br>สาขาวิชาอายุรศาสตร์ปัจฉิมวัย</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d33.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. สุสัณห์ อาศนะเสน <br>สาขาวิชาโรคติดเชื้อและอายุรศาสตร์เขตร้อน</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d34.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. ภาณุวัฒน์ พรหมสิน <br>สาขาวิชาเวชบำบัดวิกฤต</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d35.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. สุชาย ศรีทิพยวรรณ <br>สาขาวิชาวักกะวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d36.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. ธรรมพร เนาว์รุ่งโรจน์ <br>สาขาวิชาเวชบำบัดวิกฤต</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d37.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.พญ. จอมจิตต์ จันทรัศมี <br>สาขาวิชาเคมีบำบัด</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d38.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. ปองวุฒิ ด่านชัยวิจตร <br>สาขาวิชาเคมีบำบัด</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d39.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.พญ. ตุลยา สีตสุวรรณ <br>สาขาวิชาการบริบาลผู้ป่วยนอก</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d40.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.ดร.นพ. อาจรบ คูหาภินันทน์ <br>สาขาวิชาโลหิตวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d41.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. เอกพันธ์ ครุพงศ์ <br>สาขาวิชาโลหิตวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d42.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.พญ. รังสิมา ทินมณี <br>สาขาวิชาการบริบาลผู้ป่วยนอก</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d43.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. เอกพล อัจฉริยะประสิทธิ์ <br>สาขาวิชาโลหิตวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d44.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.พญ. พลอยเพลิน พิกุลสด <br>สาขาวิชาโลหิตวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d45.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. ทนุวงศ์ เวียรศิลป์ <br>สาขาวิชาเวชบำบัดวิกฤต</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d46.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. ภาคภูมิ พุ่มพวง <br>สาขาวิชาโรคติดเชื้อและอายุรศาสตร์เขตร้อน</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d47.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.พญ. ฉัตรี หาญทวีพันธุ์ <br>สาขาวิชาโลหิตวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d48.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.พญ. ทัศน์พรรณ ศรีทองกุล <br>สาขาวิชาวักกะวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d49.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. ธีรวัฒน์ กุมุทพงษ์พานิช <br>สาขาวิชาประสาทวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d50.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.พญ. ชิตาภา กาวีต๊ะ <br>สาขาวิชาประสาทวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d51.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.พญ. อริศรา สุวรรณกูล <br>สาขาวิชาหทัยวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d52.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. อาจบดินทร์ วินิจกุล<br>สาขาวิชาหทัยวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d53.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. ยอดยิ่ง เกาลวณิชย์ <br>สาขาวิชาหทัยวิทยา</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/b/d54.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อ.นพ. เจริญ ฉั่วริยะกุล <br>สาขาวิชาการบริบาลผู้ป่วยนอก</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="page-header">
+                <h3>สายสนับสนุน</h3>
+            </div>
+            <li><a href="#B1" data-toggle="collapse">หัวหน้าสำนักงานภาควิชาอายุรศาสตร์</a></li>
+            <div id="B1" class="collapse">
+                <div class="row">
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อนงค์ จุดกระแจะ	<br>หัวหน้าสำนักงานภาควิชาอายุรศาสตร์</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <li><a href="#B2" data-toggle="collapse">หน่วยบริหารสำนักงาน</a></li>
+            <div id="B2" class="collapse">
+                <div class="row">
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">หทัยลักษณ์ กลิ่นกัน</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-heade">ณภัทรชนม์ แขรัตน์</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อารีย์ วงศ์กร</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ประสาน พ่วงเพ็ชร</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ชาญเมธา ประโยชน์งาม</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ภาณุพันธ์ ไทรเกิดศรี</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">นฤมล สุวรรณสมพงษ์</h4>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ปัทมวรรณ มงคลธง</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ปภัสสร คำโท</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">กวินลักษณ์ อมรธรรมศาน</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">สุชาติ นามมงคพล</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">องอาจ พรประเสิฐผล</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ประภาพรรณ จันเรียน</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ปัญจพร พิมพินิจ</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <li><a href="#B3" data-toggle="collapse">หน่วยนโยบายและแผน/CSR</a></li>
+            <div id="B3" class="collapse">
+                <div class="row">
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">สุชีรา กาญจนพิบูลย์</h4>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ปนัดดา เที่ยงรอด</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <li><a href="#B4" data-toggle="collapse">หน่วยบุคคลและจัดการความรู้</a></li>
+            <div id="B4" class="collapse">
+                <div class="row">
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">สุกัญญา ผาสุข</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รักษ์ธิดามาศ ศรีวงศ์บุญเดช</h4>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อัจฉราพรรณ โพธิชัย</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อรสิยาภัณ แสงฉาย</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <li><a href="#B5" data-toggle="collapse">หน่วยงบประมาณ พัสดุและการเงิน</a></li>
+            <div id="B5" class="collapse">
+                <div class="row">
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ฐายิกา สุภาพกุล</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">รักศักดิ์ เล็กมณี</h4>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ชญาน์นัทช์ นพคุณ</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <li><a href="#B6" data-toggle="collapse">หน่วยการศึกษาระดับแพทยศาสตรบัณฑิต</a></li>
+            <div id="B6" class="collapse">
+                <div class="row">
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">พิชวดี แซ่อึ้ง</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">สมควร ศรียังเล็ก</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อาทิตยา หงษ์อุดร</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">สุพัตรา คลังชำนาญ</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">อารีรัตน์ อุทัย</h4>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">จรีย์ ประสานกุล</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ธารทิพย์ ผันเจริญ</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">บุษราภรณ์ ปิ่นพลับ</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">นภัสวรรณ สุขแสง</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <li><a href="#B7" data-toggle="collapse">หน่วยการศึกษาระดับปริญญา</a></li>
+            <div id="B7" class="collapse">
+                <div class="row">
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">เรวดี พีรวัฒนฒึก</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">วันวิสาข์ สุวรรณเสาร์</h4>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">สุภาพร สุรัตน์</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">สุภาภรณ์ จุลเศียร</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <li><a href="#B8" data-toggle="collapse">หน่วยวิจัยและบริการวิชาการ</a></li>
+            <div id="B8" class="collapse">
+                <div class="row">
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">เขมจิรา การเกตกลาง</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">วีรนุช ยึนประโคน</h4>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">นิษฐกานต์ นภนที</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <li><a href="#B12" data-toggle="collapse">หน่วยบริการและพัฒนาคุณภาพ</a></li>
+            <div id="B12" class="collapse">
+                <div class="row">
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ยุพยงค์ คงสอน</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">กุลธิดา พูลแก้ว	</h4>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">เกวลี ยะปะเต</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">สุภาภรณ์ อันโน</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <li><a href="#B9" data-toggle="collapse">หน่วยเวชสารสนเทศ</a></li>
+            <div id="B9" class="collapse">
+                <div class="row">
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ปนัดดา เที่ยงรอด</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">โสภณ นิธิยานันท์</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">นงนภัส สำแดงเดช</h4>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">พูลทรัพย์ เที่ยงรอด</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ชาญวิทย์ จรัสเกิดสกุลลิ้ม</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <li><a href="#B10" data-toggle="collapse">เวชระเบียน</a></li>
+            <div id="B10" class="collapse">
+                <div class="row">
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">สมจิตร์ คล้ายอุไร</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ธานินทร์ แววรัตน์</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">พิมพ์ลภัส คล้ายอุไร</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">มณเฑียร ศรีสุพรรณ</h4>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ลภัสรดา หอมหวล</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">เกษม ปั้นพุ่ม</h4>
+                            </div>
+                        </article>
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">ทศรัตน์ พิบูลธนะกิตติ์</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <li><a href="#B11" data-toggle="collapse">หน่วยวิเทศสัมพันธ์</a></li>
+            <div id="B11" class="collapse">
+                <div class="row">
+                    <div class="col-md-6">
+                        <article class="widget-post">
+                            <div class="post-image">
+                                <img src="images/90x60-1.jpg" style="width:100px">
+                            </div>
+                            <div class="post-body">
+                                <h4 class="post-header">สุชีรา กาญจนพิบูลย์</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-socials">
+                    <a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" data-toggle="tooltip" title="Instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="#" data-toggle="tooltip" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+                </div>			
+                <div class="footer-bottom">
+                    <i class="t">ภาควิชาอายุรศาสตร์ รพ.ศิริราช ตึกอัษฎางค์ ชั้น4 แขวงศิริราช เขตบางกอกน้อย กรุงเทพมหานคร 10700 โทร.02-419-7767-69</i>
+                </div>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
