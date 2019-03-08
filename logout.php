@@ -1,5 +1,16 @@
 <?php
 session_start();
-session_destroy(;
-header("lovation: form.php");
 ?>
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+session_unset(); 
+
+session_destroy();
+  header('location: login.php');
+?>
+
+</body>
+</html>
