@@ -1,5 +1,5 @@
 <?php
-include 'include/controller.php';
+include 'connection/controller.php';
 $session_username = $_SESSION['user_name'];
 $session_role = $_SESSION['role'];
 if(empty($_SESSION['user_name'])){

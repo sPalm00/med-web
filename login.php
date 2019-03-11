@@ -1,5 +1,5 @@
 <?php
-include 'include/controller.php';
+include 'connection/controller.php';
 if(isset($_SESSION['user_name'])){
     header("location:inventory.php");
 }

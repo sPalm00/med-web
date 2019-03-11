@@ -93,13 +93,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }   
 
 
-//Login Query
 if(isset($_POST['login'])){
     $sql = "SELECT * FROM tbl_user WHERE username='$username'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-        // output data of each row
         while($row = $result->fetch_assoc()) {
             if($row['password'] == $txtpassword){
                 $_SESSION['user_name'] = $row['username'];
