@@ -1,7 +1,7 @@
 <?php
 include 'connection/controller.php';
 $session_username = $_SESSION['user_name'];
-$session_role = $_SESSION['role'];
+$session_role = $_SESSION['status'];
 if(empty($_SESSION['user_name'])){
     header("location:login.php");
 }
@@ -30,6 +30,7 @@ if(empty($_SESSION['user_name'])){
     <link rel="stylesheet" href="css/responsive.bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.ckeditor.com/4.6.2/standard/ckeditor.js"></script>
 </head>
 
 <body onload="myFunction()" style="margin:0;">
@@ -50,78 +51,62 @@ if(empty($_SESSION['user_name'])){
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Item Name</th>
-                    <th>Item Code</th>
-                    <th>Category</th>
-                    <th>Description</th>
-                    <th>Quantity</th>
-                    <th>Action</th>
+                    <th>หัวข้อข่าว</th>
+                    <th>รายละเอียด</th>
+                    <th>ไฟล์ประกอบ</th>
+                    <th>วัน/เดือน/ปี</th>
+                    <th>ผู้ประกาศ</th>
+                    <th>ประเภทข่าว</th>
                 </tr>
             </thead>
             <tfoot>
                 <tr>
                     <th>ID</th>
-                    <th>Item Name</th>
-                    <th>Item Code</th>
-                    <th>Category</th>
-                    <th>Description</th>
-                    <th>Quantity</th>
-                    <th>Action</th>
+                    <th>หัวข้อข่าว</th>
+                    <th>รายละเอียด</th>
+                    <th>ไฟล์ประกอบ</th>
+                    <th>วัน/เดือน/ปี</th>
+                    <th>ผู้ประกาศ</th>
+                    <th>ประเภทข่าว</th>
                 </tr>
             </tfoot>
             <tbody>
                 <?php 
-                    $sql = "SELECT tbl_items.id, tbl_items.item_name, tbl_items.item_code, tbl_items.item_description, tbl_items.item_category, tbl_items.item_critical_lvl AS critical_lvl, tbl_inventory.qty AS qty FROM tbl_items join tbl_inventory ON tbl_items.item_code=tbl_inventory.item_code";
+                    $sql = "SELECT db_news.id, db_news.news_name, db_news.news_detail, db_news.news_file, db_news.news_date, db_news.news_announcer, db_news.news_status FROM db_news";
                     $result = $conn->query($sql);
                     if ($result->num_rows > 0) {
                         while($row = $result->fetch_assoc()) {
                             $id = $row['id'];
-                            $item_name = $row['item_name'];
-                            $item_code = $row['item_code'];
-                            $item_category = $row['item_category'];
-                            $item_description = $row['item_description'];
-                            $critical_lvl = $row['critical_lvl'];
-                            $qty = $row['qty'];
-
-                            if($qty == 0){
-                                $alert = "<div class='alert alert-danger'>
-                                <strong>$qty</strong> No Stock
-                                </div>";
-                            }else if($critical_lvl >= $qty){
-                                $alert = "<div class='alert alert-warning'>
-                                <strong>$qty</strong> Critical Level
-                                </div>";
-                            }else {
-                                $alert = $qty;
-                            }
-
+                            $news_name = $row['news_name'];
+                            $news_detail = $row['news_detail'];
+                            $news_file = $row['news_file'];
+                            $news_announcer = $row['news_announcer'];
+                            $news_date = $row['news_date'];
+                            $news_status = $row['news_status'];
                     ?>
                 <tr>
                     <td>
                         <?php echo $id; ?>
                     </td>
                     <td>
-                        <?php echo $item_name; ?>
+                        <?php echo $news_name; ?>
                     </td>
                     <td>
-                        <?php echo $item_code; ?>
+                        <?php echo $news_detail; ?>
                     </td>
                     <td>
-                        <?php echo $item_category; ?>
+                        <?php echo $news_file; ?>
                     </td>
                     <td>
-                        <?php echo $item_description; ?>
+                        <?php echo $news_announcer; ?>
                     </td>
                     <td>
-                        <?php echo $alert; ?>
+                        <?php echo $news_date; ?>
                     </td>
                     <td>
-                        <a href="#out<?php echo $id;?>" data-toggle="modal">
-                            <button type='button' class='btn btn-default btn-sm'><span class='glyphicon glyphicon-minus' aria-hidden='true'></span></button>
-                        </a>
-                        <a href="#add<?php echo $id;?>" data-toggle="modal">
-                            <button type='button' class='btn btn-success btn-sm'><span class='glyphicon glyphicon-plus' aria-hidden='true'></span></button>
-                        </a>
+                        <?php echo $news_status; ?>
+                    </td>
+                    <td>
                         <a href="#edit<?php echo $id;?>" data-toggle="modal">
                             <button type='button' class='btn btn-warning btn-sm'><span class='glyphicon glyphicon-edit' aria-hidden='true'></span></button>
                         </a>
@@ -129,95 +114,6 @@ if(empty($_SESSION['user_name'])){
                             <button type='button' class='btn btn-danger btn-sm'><span class='glyphicon glyphicon-trash' aria-hidden='true'></span></button>
                         </a>
                     </td>
-                    <div id="add<?php echo $id; ?>" class="modal fade" role="dialog">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <form method="post" class="form-horizontal" role="form">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title">Add Stocks</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="form-group">
-                                            <label class="control-label col-sm-2" for="item_name">Item Name:</label>
-                                            <div class="col-sm-3">
-                                                <input type="hidden" name="add_stocks_id" value="<?php echo $id; ?>">
-                                                <input type="text" class="form-control" id="item_name" name="item_name" placeholder="Item Name" required readonly value="<?php echo $item_name; ?>"> </div>
-                                            <label class="control-label col-sm-2" for="item_code">Item Code:</label>
-                                            <div class="col-sm-2">
-                                                <input type="text" class="form-control" id="item_code" name="item_code" placeholder="Item Code" required readonly value="<?php echo $item_code; ?>" autocomplete="off"> </div>
-                                            <label class="control-label col-sm-1" for="dr_no">DR #:</label>
-                                            <div class="col-sm-2">
-                                                <input type="text" class="form-control" id="dr_no" name="dr_no" placeholder="DR #" autocomplete="off" required>
-                                            </div>
-                                        </div>
-                                        <br>
-                                        <br>
-                                        <div class="form-group">
-                                            <label class="control-label col-sm-2" for="item_name">Quantity:</label>
-                                            <div class="col-sm-4">
-                                                <input type="number" class="form-control" id="quantity" name="quantity" placeholder="Quantity" autocomplete="off" required min="1"> </div>
-                                            <label class="control-label col-sm-2" for="item_name">Remarks:</label>
-                                            <div class="col-sm-4">
-                                                <textarea class="form-control" id="remarks" name="remarks" placeholder="Remarks"></textarea>
-                                            </div>
-                                        </div>
-                                        <br>
-                                        <br>
-                                        <br>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="submit" class="btn btn-primary" name="add_inventory"><span class="glyphicon glyphicon-plus"></span> Add</button>
-                                        <button type="button" class="btn btn-warning" data-dismiss="modal"><span class="glyphicon glyphicon-remove-circle"></span> Cancel</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="out<?php echo $id; ?>" class="modal fade" role="dialog">
-                        <div class="modal-dialog modal-lg">
-                            <form method="post" class="form-horizontal" role="form">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title">Out Stocks</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="form-group">
-                                            <label class="control-label col-sm-2" for="item_name">Item Name:</label>
-                                            <div class="col-sm-2">
-                                                <input type="hidden" name="minus_stocks_id" value="<?php echo $id; ?>">
-                                                <input type="text" class="form-control" id="item_name" name="item_name" placeholder="Item Name" required readonly value="<?php echo $item_name; ?>"> </div>
-                                            <label class="control-label col-sm-2" for="item_code">Item Code:</label>
-                                            <div class="col-sm-2">
-                                                <input type="text" class="form-control" id="item_code" name="item_code" placeholder="Item Code" required readonly value="<?php echo $item_code; ?>"> </div>
-                                            <label class="control-label col-sm-2" for="dr_no">DR No.:</label>
-                                            <div class="col-sm-2">
-                                                <input type="text" class="form-control" id="dr_no" name="dr_no" placeholder="DR No." autocomplete="off" required autofocus> </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-sm-2" for="item_name">Quantity:</label>
-                                            <div class="col-sm-4">
-                                                <input type="number" class="form-control" id="quantity" name="quantity" placeholder="Quantity" autocomplete="off" required max="<?php echo $qty; ?>" min="1"> </div>
-                                            <label class="control-label col-sm-2" for="received_by" data-toggle="tooltip" title="Unit of Measurement">Receive By:</label>
-                                            <div class="col-sm-4">
-                                                <input type="text" class="form-control" id="received_by" name="received_by" autocomplete="off" required> </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-sm-2" for="item_name">Remarks:</label>
-                                            <div class="col-sm-10">
-                                                <textarea class="form-control" id="remarks" name="remarks" placeholder="Remarks"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="submit" class="btn btn-primary" name="minus_inventory"><span class="glyphicon glyphicon-plus"></span> Out</button>
-                                        <button type="button" class="btn btn-warning" data-dismiss="modal"><span class="glyphicon glyphicon-remove-circle"></span> Cancel</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
 
                     <div id="changepass" class="modal fade" role="dialog">
                         <div class="modal-dialog">
@@ -257,33 +153,35 @@ if(empty($_SESSION['user_name'])){
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title">Edit Item</h4>
+                                        <h4 class="modal-title">แก้ไขข่าวสาร</h4>
                                     </div>
                                     <div class="modal-body">
                                         <input type="hidden" name="edit_item_id" value="<?php echo $id; ?>">
                                         <div class="form-group">
-                                            <label class="control-label col-sm-2" for="item_name">Item Name:</label>
-                                            <div class="col-sm-4">
-                                                <input type="text" class="form-control" id="item_name" name="item_name" value="<?php echo $item_name; ?>" placeholder="Item Name" required autofocus> </div>
-                                            <label class="control-label col-sm-2" for="item_code">Item Code:</label>
-                                            <div class="col-sm-4">
-                                                <input type="text" readonly class="form-control" id="item_code" name="item_code" value="<?php echo $item_code; ?>" placeholder="Item Code" required> </div>
+                                            <label class="control-label col-sm-2" for="news_name" align="right">หัวข้อข่าว :</label>
+                                            <div class="col-sm-8" align="left">
+                                                <input type="text" class="form-control" id="news_name" name="news_name" value="<?php echo $news_name; ?>" required autofocus> </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="control-label col-sm-2" for="item_description">Description:</label>
-                                            <div class="col-sm-4">
-                                                <textarea cclass="form-control" id="item_description" name="item_description" placeholder="Description" required style="width: 100%;">
-                                                            <?php echo $item_description; ?>
+                                            <label class="control-label col-sm-2" for="$news_announcer" align="right">ผู้ประกาศ :</label>
+                                            <div class="col-sm-8" align="left">
+                                                <input type="text" class="form-control" id="$news_announcer" name="$news_announcer" value="<?php echo $news_announcer; ?>" required autofocus> </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2" for="news_detail" align="right">รายละเอียด :</label>
+                                            <div class="col-sm-8" align="left">
+                                                <textarea class="ckeditor" id="news_detail" name="news_detail" required style="width: 100%;">
+                                                            <?php echo $news_detail; ?>
                                                         </textarea>
                                             </div>
-                                            <label class="control-label col-sm-2" for="item_category">Category:</label>
-                                            <div class="col-sm-4">
-                                                <input type="text" class="form-control" id="item_category" name="item_category" value="<?php echo $item_category; ?>" placeholder="Category" required> </div>
+                                            <label class="control-label col-sm-2" for="news_file" align="right">ไฟล์ประกอบ :</label>
+                                            <div class="col-sm-7" align="left">
+                                                <input type="filt" class="form-control" id="news_file" name="news_file" cols="69" rows="5" value="<?php echo $news_file; ?>" required> </div>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="submit" class="btn btn-primary" name="update_item"><span class="glyphicon glyphicon-edit"></span> Edit</button>
-                                        <button type="button" class="btn btn-warning" data-dismiss="modal"><span class="glyphicon glyphicon-remove-circle"></span> Cancel</button>
+                                        <button type="submit" class="btn btn-primary" name="update_item"><span class="glyphicon glyphicon-edit"></span> บันทึก</button>
+                                        <button type="button" class="btn btn-warning" data-dismiss="modal"><span class="glyphicon glyphicon-remove-circle"></span> ยกเลิก</button>
                                     </div>
                                 </div>
                             </div>
@@ -295,15 +193,15 @@ if(empty($_SESSION['user_name'])){
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title">Delete</h4>
+                                        <h4 class="modal-title">ลบข่าวสาร</h4>
                                     </div>
                                     <div class="modal-body">
                                         <input type="hidden" name="delete_id" value="<?php echo $id; ?>">
                                         <div class="alert alert-danger">Are you Sure you want Delete <strong>
                                                 <?php echo $item_name; ?>?</strong> </div>
                                         <div class="modal-footer">
-                                            <button type="submit" name="delete" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> YES</button>
-                                            <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove-circle"></span> NO</button>
+                                            <button type="submit" name="delete" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> ตกลง</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove-circle"></span> ยกเลิก</button>
                                         </div>
                                     </div>
                                 </div>
@@ -314,7 +212,7 @@ if(empty($_SESSION['user_name'])){
                 <?php
                         }
                         if(isset($_POST['change_pass'])){
-                            $sql = "SELECT password FROM tbl_user WHERE username='$session_username'";
+                            $sql = "SELECT password FROM db_user WHERE username='$session_username'";
                             $result = $conn->query($sql);
 
                             if ($result->num_rows > 0) {
@@ -326,7 +224,7 @@ if(empty($_SESSION['user_name'])){
                                         echo "<script>window.alert('Password Not Match!');</script>";
                                         $passwordErr = '<div class="alert alert-warning"><strong>Password!</strong> Not Match.</div>';
                                     } else{
-                                        $sql = "UPDATE tbl_user SET password='$new_password' WHERE username='$session_username'";
+                                        $sql = "UPDATE db_user SET password='$new_password' WHERE username='$session_username'";
 
                                         if ($conn->query($sql) === TRUE) {
                                             echo "<script>window.alert('Password Successfully Updated');</script>";
@@ -343,16 +241,17 @@ if(empty($_SESSION['user_name'])){
 
 
                         if(isset($_POST['update_item'])){
-                            $edit_item_id = $_POST['edit_item_id'];
-                            $item_name = $_POST['item_name'];
-                            $item_code = $_POST['item_code'];
-                            $item_category = $_POST['item_category'];
-                            $item_description = $_POST['item_description'];
-                            $sql = "UPDATE tbl_items SET 
-                                item_name='$item_name',
-                                item_code='$item_code',
-                                item_category='$item_category',
-                                item_description='$item_description'
+                            $news_name = $_POST['news_name'];
+                            $news_detail = $_POST['news_detail'];
+                            $news_file = $_POST['news_file'];
+                            $news_announcer = $_POST['news_announcer'];
+                            $news_status = $_POST['news_status'];
+                            $sql = "UPDATE db_news SET 
+                                news_name='$news_name',
+                                news_detail='$news_detail',
+                                news_file='$news_file',
+                                news_announcer='$news_announcer',
+                                news_status='$news_status'
                                 WHERE id='$edit_item_id' ";
                             if ($conn->query($sql) === TRUE) {
                                 echo '<script>window.location.href="inventory.php"</script>';
@@ -378,53 +277,18 @@ if(empty($_SESSION['user_name'])){
                         }
                     }
 
-                    if(isset($_POST['add_item'])){
-                        $item_name = $_POST['item_name'];
-                        $item_code = $_POST['item_code'];
-                        $item_category = $_POST['item_category'];
-                        $item_description = $_POST['item_description'];
-                        $sql = "INSERT INTO tbl_items (item_name,item_code,item_description,item_category,item_critical_lvl,item_date)VALUES ('$item_name','$item_code','$item_description','$item_category','$item_critical_lvl','$date')";
+                    if(isset($_POST['add_news'])){
+                        $news_name = $_POST['news_name'];
+                        $news_detail = $_POST['news_detail'];
+                        $news_file = $_POST['news_file'];
+                        $news_announcer = $_POST['news_announcer'];
+                        $news_status = $_POST['news_status'];
+                        $sql = "INSERT INTO db_news (news_name,news_detail,news_file,news_announcer,news_status,news_date)VALUES ('$news_name','$news_detail','$news_file','$news_announcer','$news_status','$news_date')";
                         if ($conn->query($sql) === TRUE) {
-                            $add_inventory_query = "INSERT INTO tbl_inventory(item_name,item_code,date,qty)VALUES ('$item_name','$item_code','$date','0')";
-
                             if ($conn->query($add_inventory_query) === TRUE) {
                                 echo '<script>window.location.href="inventory.php"</script>';
                             } else {
                                 echo "Error: " . $sql . "<br>" . $conn->error;
-                            }
-                        } else {
-                            echo "Error: " . $sql . "<br>" . $conn->error;
-                        }
-                    }
-
-                    if(isset($_POST['add_inventory'])){
-                        $add_stocks_id = clean($_POST['add_stocks_id']);
-                        $remarks = clean($_POST["remarks"]);
-                        $quantity = clean($_POST['quantity']);
-                        $sql = "INSERT INTO tbl_issuance(date,item_name,item_code,qty, in_out,            remarks)VALUES ('$date_time','$item_name','$item_code','$quantity','in','$remarks')";
-                        if ($conn->query($sql) === TRUE) {
-                            $add_inv = "UPDATE tbl_inventory SET qty=(qty + '$quantity') WHERE id='$add_stocks_id' ";
-                            if ($conn->query($add_inv) === TRUE) {
-                                echo '<script>window.location.href="inventory.php"</script>';
-                            } else {
-                                echo "Error updating record: " . $conn->error;
-                            }
-                        } else {
-                            echo "Error: " . $sql . "<br>" . $conn->error;
-                        }
-                    }
-
-                    if(isset($_POST['minus_inventory'])) {
-                        $minus_stocks_id = clean($_POST['minus_stocks_id']);
-                        $remarks = clean($_POST["remarks"]);
-                        $quantity = clean($_POST['quantity']);
-                        $sql = "INSERT INTO tbl_issuance(date,item_name,item_code,qty, sender_receiver,in_out,            remarks)VALUES ('$date_time','$item_name','$item_code','$quantity','$received_by','out','$remarks')";
-                        if ($conn->query($sql) === TRUE) {
-                            $add_inv = "UPDATE tbl_inventory SET qty=(qty - '$quantity') WHERE id='$minus_stocks_id' ";
-                            if ($conn->query($add_inv) === TRUE) {
-                                echo '<script>window.location.href="inventory.php"</script>';
-                            } else {
-                                echo "Error updating record: " . $conn->error;
                             }
                         } else {
                             echo "Error: " . $sql . "<br>" . $conn->error;
@@ -440,35 +304,35 @@ if(empty($_SESSION['user_name'])){
                 <form method="post" class="form-horizontal" role="form">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Add Item</h4>
+                        <h4 class="modal-title">เพิ่มข่าวสาร</h4>
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-                            <label class="control-label col-sm-2" for="item_name">Item Name:</label>
-                            <div class="col-sm-4">
-                                <input type="text" class="form-control" id="item_name" name="item_name" placeholder="Item Name" autocomplete="off" autofocus required> </div>
-                            <label class="control-label col-sm-2" for="item_code">Item Code:</label>
-                            <div class="col-sm-4">
-                                <input type="text" class="form-control" id="item_code" name="item_code" placeholder="Item Code" autocomplete="off" required> </div>
+                            <label class="control-label col-sm-2" for="news_name" align="right">หัวข้อข่าว :</label>
+                            <div class="col-sm-8" align="left">
+                                <input type="text" class="form-control" id="news_name" name="news_name" autocomplete="off" autofocus required> </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-sm-2" for="item_category">Category:</label>
-                            <div class="col-sm-4">
-                                <input type="text" class="form-control" id="item_category" name="item_category" placeholder="Item Category" autocomplete="off" required> </div>
-                            <label class="control-label col-sm-2" for="item_critical_lvl">Critical Level:</label>
-                            <div class="col-sm-4">
-                                <input type="number" class="form-control" id="item_critical_lvl" name="item_critical_lvl" autocomplete="off" required> </div>
+                            <label class="control-label col-sm-2" for="news_announcer" align="right">ผู้ประกาศ :</label>
+                            <div class="col-sm-8" align="left">
+                                <input type="text" class="form-control" id="news_announcer" name="news_announcer" autocomplete="off" autofocus required> </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-sm-2" for="item_sub_category">Description:</label>
-                            <div class="col-sm-10">
-                                <textarea class="form-control" id="item_description" name="item_description" autocomplete="off" required></textarea>
+                            <label class="control-label col-sm-2" for="news_detail" align="right">รายละเอียด :</label>
+                            <div class="col-sm-8" align="left">
+                                <textarea class="ckeditor" id="news_detail" name="news_detail" cols="69" rows="5" autocomplete="off" required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="news_file" align="right">ไฟล์ประกอบ :</label>
+                            <div class="col-sm-7" align="left">
+                            <input type="file" id="news_file" name="news_file" autocomplete="off" autofocus required> </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary" name="add_item"><span class="glyphicon glyphicon-plus"></span> Add</button>
-                        <button type="button" class="btn btn-warning" data-dismiss="modal"><span class="glyphicon glyphicon-remove-circle"></span> Cancel</button>
+                        <button type="submit" class="btn btn-primary" name="add_item"><span class="glyphicon glyphicon-plus"></span> บันทึก</button>
+                        <button type="button" class="btn btn-warning" data-dismiss="modal"><span class="glyphicon glyphicon-remove-circle"></span> ยกเลิก</button>
                     </div>
                 </form>
             </div>
@@ -477,9 +341,9 @@ if(empty($_SESSION['user_name'])){
     <div id="logout" class="modal fade" role="dialog">
         <div class="modal-dialog modal-md">
             <div class="modal-content">
-                <div class="modal-header">3
+                <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Logout</h4>
+                    <h4 class="modal-title">ออกจากระบบ</h4>
                 </div>
                 <div class="modal-body">
                     <input type="hidden" name="delete_id" value="<?php echo $id; ?>">
@@ -490,14 +354,13 @@ if(empty($_SESSION['user_name'])){
                     </div>
                     <div class="modal-footer">
                         <a href="logout.php">
-                            <button type="button" class="btn btn-danger">YES </button>
+                            <button type="button" class="btn btn-danger">ตกลง</button>
                         </a>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">ยกเลิก</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
-
 </html>

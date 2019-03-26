@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ภาควิชาอายุรศาสตร์ คณะแพทยศาสตร์ศิริราชพยาบาล</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+</head>
+<style>
+    body {
+        background-color:#1d1d1d !important;
+        font-family: "Asap", sans-serif;
+        color:#989898;
+        margin:10px;
+        font-size:16px;
+    }
+    #demo {
+        height:100%;
+        position:relative;
+        overflow:hidden;
+    }
+    .green{
+    background-color:#6fb936;
+    }
+    .thumb{
+        margin-bottom: 30px;
+    }
+        
+    .page-top{
+        margin-top:85px;
+    }
+    img.zoom {
+        width: 100%;
+        height: 200px;
+        border-radius:5px;
+        object-fit:cover;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+    }
+    .transition {
+        -webkit-transform: scale(1.2); 
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    .modal-header {
+   
+        border-bottom: none;
+    }
+    .modal-title {
+        color:#000;
+    }
+    .modal-footer{
+        display:none;  
+    }
+    .btn{
+        background-color: #104697;
+    }
+</style>
+<body>
+    <div class="container page-top">
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <div class="sidebar-widh">
+                    <h3 class="sidebar-title">งานลอยกระทง ประจำปี 2561</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/001.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/001.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/002.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/002.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/003.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/003.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/004.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/004.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div><div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/005.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/005.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/006.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/006.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/007.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/007.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/008.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/008.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/009.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/009.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/010.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/010.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/011.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/011.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/012.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/012.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/013.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/013.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/014.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/014.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/015.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/015.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/016.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/016.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/017.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/017.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/018.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/018.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/019.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/019.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/020.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/020.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/021.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/021.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/022.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/022.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/023.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/023.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/024.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/024.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/025.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/025.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/026.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/026.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/027.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/027.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/028.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/028.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/029.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/029.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/030.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/030.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/031.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/031.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/032.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/032.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/033.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/033.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/034.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/034.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/035.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/035.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/036.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/036.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/037.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/037.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/038.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/038.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/039.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/039.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/040.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/040.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/041.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/041.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/042.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/042.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/043.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/043.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/044.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/044.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/045.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/045.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/046.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/046.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/047.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/047.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/048.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/048.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/049.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/049.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/050.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/050.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/051.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/051.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/052.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/052.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/053.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/053.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/054.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/054.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/055.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/055.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/056.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/056.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/057.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/057.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/058.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/058.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/059.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/059.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/060.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/060.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/061.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/061.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/062.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/062.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/063.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/063.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/064.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/064.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/065.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/065.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/066.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/066.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/067.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/067.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/068.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/068.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/069.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/069.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/070.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/070.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/071.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/071.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/072.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/072.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/073.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/073.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/074.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/074.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/075.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/075.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/076.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/076.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/077.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/077.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/078.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/078.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/079.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/079.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/080.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/080.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/081.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/081.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/082.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/082.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/083.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/083.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/084.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/084.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/085.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/085.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/086.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/086.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/087.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/087.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/088.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/088.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/089.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/089.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/090.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/090.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/091.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/091.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/092.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/092.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/093.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/093.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/094.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/094.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/095.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/095.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/096.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/096.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/097.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/097.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/098.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/098.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/099.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/099.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/100.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/100.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/101.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/101.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/102.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/102.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/103.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/103.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/104.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/104.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/105.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/105.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/106.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/106.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/107.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/107.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/108.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/108.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/109.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/109.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/110.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/110.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/111.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/111.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/112.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/112.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/113.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/113.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/114.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/114.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/115.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/115.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/116.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/116.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/117.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/117.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/118.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/118.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/119.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/119.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/120.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/120.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/121.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/121.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/122.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/122.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/123.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/123.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/124.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/124.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/125.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/125.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/126.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/126.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="images/newyear/127.jpg" class="fancybox" rel="ligets">
+                    <img src="images/newyear/127.jpg" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+        </div>   
+        <a href="index.html">
+            <button type="button" class="btn btn-primary btn-block">HomePage</button>
+        </a>
+        <br>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".fancybox").fancybox({
+                openEffect: "none",
+                closeEffect: "none"
+            });
+            $(".zoom").hover(function(){
+                $(this).addClass('transition');
+            }, function(){
+                $(this).removeClass('transition');
+            });
+        });
+    </script>
+</body>
+</html>

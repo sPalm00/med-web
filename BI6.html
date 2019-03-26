@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ภาควิชาอายุรศาสตร์ คณะแพทยศาสตร์ศิริราชพยาบาล</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    #header {
+        border-bottom: 3px solid gold;
+    }
+	.row {padding-top :20px;}
+    .affix{
+		top: 0;
+		width: 100%;
+		z-index: 9999 !important;
+	}
+	.affix + .container-fluid{
+		padding-top: 70px;
+	}
+	body{
+		background-color: #ffffff;
+	}
+	footer{
+		background-color: #104697;
+	}
+	.navbar {
+		background-color : #104697;
+	}
+	.navbar-inverse .navbar-nav .nav-link {
+    color: #ffffff;
+	}
+	.navbar-inverse .nav-item:hover .nav-link {
+    color: #ffffff;
+	}
+	.navbar-inverse .dropdown-menu {
+    background-color: #3180F5;
+	}
+	.navbar-inverse .dropdown-item {
+    color: #ffffff;
+	}
+	.navbar-inverse .dropdown-item:hover,
+	.navbar-inverse .dropdown-item:focus {
+    color: #ffffff;
+    background-color: rgba(255,255,255,.5);
+	}
+</style>
+<body>
+	<div class="container-fluid " id="headerimages" style="background-color:#ffffff">
+		<img src="images/Si_Th_H_Color.png" style="width: 600px">
+	</div>
+	<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="250">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="index.html" ><i class="fa fa-home"> หน้าหลัก</a></li></i>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown">ข้อมูลองค์กร<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="Information.html">ประวัติภาควิชา</a></li>
+							<li><a class="dropdown-item" href="Information.html#inform">วิสัยทัศน์/พันธกิจ</a></li>
+							<li><a class="dropdown-item" href="structure.html">โครงสร้างการบริหารภาค</a></li>
+							<li><a class="dropdown-item" href="department.html">รายนามหัวหน้าภาค</a></li>
+							<li><a class="dropdown-item" href="Com.html">กรรมการบริหารภาค</a></li>
+							<li><a class="dropdown-item" href="Branch.html">รายระเอียดสาขาวิชา</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown">บุคลากร<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="personnel.html">บุคลากร</a></li>
+								<li><a class="dropdown-item" href="#">เกียรติยศอายุรศาสตร์</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown">ข่าวสาร<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="news.html">ข่าวประชาสัมพันธ์</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวกิจกรรม</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวการศึกษาก่อนปริญญา</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวการศึกษาหลังปริญญา</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="other.html">อื่นๆ</a></li>
+						<li class="nav-item"><a class="nav-link" href="Contact.html">ติดต่อ/สอบถาม</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user"></i> เข้าสู่ระบบ<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<div class="container">
+									<form action="/action_page.php">
+										<div class="form-group row">
+											<div class="col-xs-2">
+												<label for="user">Username:</label>
+												<input type="user" class="form-control" id="user" placeholder="Enter user" name="user" size="20" maxlength="20">
+											</div>
+											<div class="col-xs-3">
+												<label for="pwd">Password:</label>
+												<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" size="20" maxlength="20">
+											</div>
+											<button type="submit" class="btn btn-default">Submit</button>
+										</div>
+									</form>
+								</div>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+        <div class="container">
+            <div id="header" class="page-header">
+                <h2>สาขาวิชาประสาทวิทยา</h2>
+            </div>
+            <div id="body" class="page-header">
+                <h3>งานการเรียนการสอน</h3>
+            </div>
+            <p> สาขาวิชาประสาทวิทยา ได้แบ่งหน่วยงานออกเป็น 7 หน่วยงานย่อย โดยมีผู้รับผิดชอบดังนี้ 1. หน่วยโรคหลอดเลือดสมอง (Stroke Section) มี ศ.นพ.นิพนธ์ พวงวรินทร์ เป็นผู้อำนวยการ 2. หน่วยงาน Neuroimmunology มี รศ.พญ.นาราพร ประยูรวิวัฒน์ เป็นผู้อำนวยการ  
+                3. หน่วยงาน Neurodegenerative Disorders and Behavioral Neurology มี รศ.พญ.วรพรรณ เสนาณรงค์ เป็นผู้อำนวยการ 4. หน่วยงานโรคลมชัก (Epilepsy Section) มี ผศ.นพ.รังสรรค์ ชัยเสวิกุล เป็นผู้อำนวยการ 5. หน่วยงาน Neurophysiology มี อ.พญ.กนกวรรณ บุญญพิสิฎฐ์ เป็นผู้อำนวยการ  
+                6. หน่วยงาน Movement Disorders มี ศ.นพ.นิพนธ์ พวงวรินทร์ เป็นผู้อำนวยการ 7. หน่วยงาน Neurological Laboratory มี นายเลิศชาย วชิรุตมางกูร เป็นผู้อำนวยการ  8. หน่วยงาน Neuroophthalmology มี อ.นพ.โชติพัฒน์ ด้านชัยวิจิตร เป็นผู้อำนวยการ 9. หน่วยงาน Neurooncology มี รศ.นพ.สิทธ์ สาธรสุเมธี เป็นผู้อำนวยการ 
+                10. หน่วยงาน Hadache and Sleep disorder มี อ.นพ.วัฒนชัย โชตินัยวัตรกุล เป็นผุ้อำนวยการ ด้านการเรียนการสอนและการบริการ ทางสาขาวิชาประสาทวิทยาได้ตั้ง Siriraj Acute Stroke Unit ขึ้นเป็นแห่งแรกในประเทศไทย ในเดือนพฤษภาคม พ.ศ. 2540 ทำให้การรักษาผู้ป่วยโรคหลอดเลือดสมองมีประสิทธิภาพยิ่งขึ้นและทัดเทียมนานาชาติ ปัจจุบันสาขาวิชาประสาทวิทยา 
+                มีคณาจารย์ประจำทั้งสิ้น 12 ท่าน ฝึกอบรมแพทย์ประจำบ้านประสาทวิทยาปีละ 4-5 คน แพทย์ประจำบ้านต่อยอด 1-2 คน และมีผลงานวิจัยตีพิมพ์ปีละ 10-15 เรื่อง นอกจากนี้ยังได้จัดคลินิกเฉพาะโรคต่างๆ ขึ้นมากมาย ได้แก่ คลินิกโรคพาร์กินสัน คลินิกความจำ คลินิกโรคลมชัก คลินิกโรคกล้ามเนื้อและประสาท คลินิก multiple sclerosis คลินิก Botulinum therapy คลินิก Transient ischemic attack และคลินิกโรคปวดศีรษะ 
+                ซึ่งทำงานเพิ่มเติมนอกเหนือจากคลินิกโรคระบบประสาทในบ่ายวันอังคาร ที่ยังคงมีผู้ป่วยจำนวนมากเช่นเดิม
+            </p>
+            <div id="body" class="page-header">
+                <h3>งานบริการของสาขาวิชา</h3>
+            </div>
+            <p> คลินิกและหัตถการของสาขาวิชาฯ สาขาวิชาฯ ให้บริการตรวจรักษาผู้ป่วยในคลินิกต่าง ๆ และการทำหัตถการต่าง ๆ ดังนี้
+                <br>1.ผู้ป่วยในหอผู้ป่วยโรคหลอดเลือดสมอง (Siriraj Acute Stroke Unit) เริ่ม ปี พ.ศ. 2540
+                <br>2.การตรวจคลื่นไฟฟ้าสมอง (EEG) ทุกวันในเวลาราชการ
+                <br>3.การตรวจไฟฟ้ากล้ามเนื้อ (EMG) ทุกวันพฤหัสบดี
+                <br>4.การตรวจวิเคราะห์น้ำไขสันหลัง ทุกวันในเวลาราชการ
+                <br>5.คลินิกโรคระบบประสาท ทุกวันอังคาร 13.00-15.00 น.
+                <br>6.คลินิกความจำในผู้สูงอายุ (Memory Clinic) ทุกวันพฤหัสบดี 13.00-15.00 น.
+                <br>7.คลินิกโรค Myasthenia gravis ทุกวันศุกร์ 13.00-15.00 น.
+                <br>8.คลินิกโรค Multiple Sclerosis (MS Clinic) ทุกวันศุกร์ 13.00-15.00 น.
+                <br>9.คลินิกโรคพาร์กินสัน (Parkinson Clinic) ทุกวันศุกร์ 9.00-12.00 น.
+                <br>10.คลินิกการเคลื่อนไหวผิดปกติ (Botulinum Toxin Clinic) ทุกวันศุกร์ 8.00-12.00 น.
+                <br>11.คลินิกโรคลมชัก (Epilepsy Clinic) ทุกวันศุกร์ 9.00-12.00 น.
+                <br>12.การตรวจ Carotid Ultrasound ตึก 72 ปี ชั้น 10 ตะวันตก ทุกวันเวลาราชการ
+                <br>13.การตรวจด้วยแบบทดสอบทางประสาทจิตวิทยา ทุกวันเวลาราชการ
+                <br>14.รับปรึกษาและดูแลผู้ป่วยใน - นอกภาควิชาอายุรศาสตร์
+            </p>
+            <div id="body" class="page-header">
+                <h3>ติดต่อ / สอบถาม</h3>
+            </div>
+            <p> สำนักงาน: ตึก 72 ปีชั้น 4 ตะวันออก คณะแพทยศาสตร์ศิริราชพยาบาล
+                <br>โทรศัพท์: 02-4197101-2, 024197105 โทรสาร: 02-   y9412-3009
+            </p>
+            <div id="header" class="page-header">
+                <h3>อาจารย์ประจำสาขาวิชา</h3>
+            </div>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/f1.jpg" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">รศ.พญ. กนกวรรณ บุญญพิสิฎฐ์ 
+                            <br>หัวหน้าสาขา </h4>
+                    <li>อนุมัติบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาประสาทวิทยา</li>
+                    <li>American Board of Psychiatry and Neurology (Sub Board of Clinical Neurophysiology)</li>
+                    <li>American Board of Electrodiagnostic Medicine</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/f2.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">รศ.พญ. นาราพร ประยูรวิวัฒน์ 
+                            <br>อาจารย์ </h4>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาประสาทวิทยา</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์ทั่วไป</li>
+                    <li>ประกาศนียบัตรชั้นสูงทางวิทยาศาสตร์การแพทย์คลินิก สาขาอายุรศาสตร์</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/f3.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">รศ.นพ. ยงชัย นิละนนท์ 
+                            <br>อาจารย์ </h4>
+                    <li>อนุมัติบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาโรคหลอดเลือดสมอง</li>
+                    <li>Certificate, Fellowship in Cerebrovascular Diseases</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาประสาทวิทยา</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/f4.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">รศ.พญ. วรพรรณ เสนาณรงค์ 
+                            <br>อาจารย์ </h4>
+                    <li>ประกาศนียบัตรสถาบันกรรมการบริษัทไทย (Director Certification Program-DCP) class 142/2011</li>
+                    <li>อนุมัติบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาโรคหลอดเลือดสมอง</li>
+                    <li>ปริญญาบัตรวิทยาลัยป้องกันราชอาณาจักร</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/f5.jpg" class="media-object" style="width:100px">
+                </div>
+                    <div class="post-body">    
+                    <h4 class="media-heading">รศ.นพ. สิทธิ์ สาธรสุเมธี 
+                            <br>อาจารย์ </h4>
+                    <li>Certificate, Fellowship in Parkinson's Disease and Movement Disorders, USA</li>
+                    <li>Certificate, Fellowship in Neuro-Oncology, USA</li>
+                    <li>American Board of Psychiatry and Neurology, USA</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/f6.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">รศ.นพ. วัฒนชัย โชตินัยวัตรกุล 
+                            <br>อาจารย์ </h4>
+                    <li>Certificate of International Sleep Specialist</li>
+                    <li>อนุมัติบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาเวชศาสตร์ครอบครัว</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาประสาทวิทยา</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/f7.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">ผศ.นพ. ปรัชญา ศรีวานิชภูมิ 
+                            <br>อาจารย์ </h4>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาวิชาประสาทวิทยา</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาวิชาอายุรศาสตร์</li>
+                    <li>แพทยศาสตร์บัณฑิต เกียรตินิยมอันดับ 2</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/f8.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">ผศ.นพ. ชัชวาล รัตนบรรณกิจ 
+                            <br>อาจารย์ </h4>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาวิชาประสาทวิทยา</li>
+                    <li>ประกาศนียบัตรบัณฑิตทางวิทยาศาสตร์การแพทย์คลินิก</li>
+                    <li>แพทยศาสตร์บัณฑิต เกียรตินิยมอันดับ 2</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/f9.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">อ.นพ. ศรัทธาวุธ วงษ์เวียงจันทร์ 
+                            <br>อาจารย์ </h4>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาประสาทวิทยา</li>
+                    <li>แพทยศาสตร์บัณฑิต</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/f10.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">อ.พญ. จิราพร จิตประไพกุลศาล 
+                            <br>อาจารย์ </h4>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาประสาทวิทยา</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์ทั่วไป</li>
+                    <li>แพทยศาสตร์บัณฑิต</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/f11.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">อ.นพ. ธีรวัฒน์ กุมุทพงษ์พานิช 
+                            <br>อาจารย์ </h4>
+                    <li>แพทยศาสตร์บัณฑิต (เกียรตินิยมอันดับ 1)</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาประสาทวิทยา</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/f12.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">อ.พญ. ชิตาภา กาวีต๊ะ 
+                            <br>อาจารย์ </h4>
+                </div>
+            </article>
+            <br>
+        </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-socials">
+                <a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" data-toggle="tooltip" title="Instagram"><i class="fa fa-instagram"></i></a>
+                <a href="#" data-toggle="tooltip" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+            </div>			
+            <div class="footer-bottom">
+                <i>ภาควิชาอายุรศาสตร์ รพ.ศิริราช ตึกอัษฎางค์ ชั้น4 แขวงศิริราช เขตบางกอกน้อย กรุงเทพมหานคร 10700 โทร.02-419-7767-69</i>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

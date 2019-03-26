@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ภาควิชาอายุรศาสตร์ คณะแพทยศาสตร์ศิริราชพยาบาล</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    #header {
+        border-bottom: 3px solid gold;
+    }
+	.row {padding-top :20px;}
+    .affix{
+		top: 0;
+		width: 100%;
+		z-index: 9999 !important;
+	}
+	.affix + .container-fluid{
+		padding-top: 70px;
+	}
+	body{
+		background-color: #ffffff;
+	}
+	footer{
+		background-color: #104697;
+	}
+	.navbar {
+		background-color : #104697;
+	}
+	.navbar-inverse .navbar-nav .nav-link {
+    color: #ffffff;
+	}
+	.navbar-inverse .nav-item:hover .nav-link {
+    color: #ffffff;
+	}
+	.navbar-inverse .dropdown-menu {
+    background-color: #3180F5;
+	}
+	.navbar-inverse .dropdown-item {
+    color: #ffffff;
+	}
+	.navbar-inverse .dropdown-item:hover,
+	.navbar-inverse .dropdown-item:focus {
+    color: #ffffff;
+    background-color: rgba(255,255,255,.5);
+	}
+</style>
+<body>
+	<div class="container-fluid " id="headerimages" style="background-color:#ffffff">
+		<img src="images/Si_Th_H_Color.png" style="width: 600px">
+	</div>
+	<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="250">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="index.html" ><i class="fa fa-home"> หน้าหลัก</a></li></i>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown">ข้อมูลองค์กร<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="Information.html">ประวัติภาควิชา</a></li>
+							<li><a class="dropdown-item" href="Information.html#inform">วิสัยทัศน์/พันธกิจ</a></li>
+							<li><a class="dropdown-item" href="structure.html">โครงสร้างการบริหารภาค</a></li>
+							<li><a class="dropdown-item" href="department.html">รายนามหัวหน้าภาค</a></li>
+							<li><a class="dropdown-item" href="Com.html">กรรมการบริหารภาค</a></li>
+							<li><a class="dropdown-item" href="Branch.html">รายระเอียดสาขาวิชา</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown">บุคลากร<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="personnel.html">บุคลากร</a></li>
+								<li><a class="dropdown-item" href="#">เกียรติยศอายุรศาสตร์</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown">ข่าวสาร<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="news.html">ข่าวประชาสัมพันธ์</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวกิจกรรม</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวการศึกษาก่อนปริญญา</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวการศึกษาหลังปริญญา</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="other.html">อื่นๆ</a></li>
+						<li class="nav-item"><a class="nav-link" href="Contact.html">ติดต่อ/สอบถาม</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user"></i> เข้าสู่ระบบ<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<div class="container">
+									<form action="/action_page.php">
+										<div class="form-group row">
+											<div class="col-xs-2">
+												<label for="user">Username:</label>
+												<input type="user" class="form-control" id="user" placeholder="Enter user" name="user" size="20" maxlength="20">
+											</div>
+											<div class="col-xs-3">
+												<label for="pwd">Password:</label>
+												<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" size="20" maxlength="20">
+											</div>
+											<button type="submit" class="btn btn-default">Submit</button>
+										</div>
+									</form>
+								</div>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+        <div class="container">
+            <div id="header" class="page-header">
+                <h2>สาขาวิชาอายุรศาสตร์ปัจฉิมวัย</h2>
+            </div>
+            <div id="body" class="page-header">
+                <h3>งานการเรียนการสอน</h3>
+            </div>
+            <p> สาขาวิชาอายุรศาสตร์ปัจฉิมวัย ร่วมมือกับภาควิชาเวชศาสตร์ป้องกันและสังคม และภาควิชาเวชศาสตร์ฟื้นฟู ในการจัดการเรียนการสอนวิชาเวชศาสตร์ผู้สูงอายุ ทั้งระดับแพทยศาสตร์บัณฑิต หลักสูตรอื่น, การศึกษาระดับหลังปริญญา 
+                และเปิดหลักสูตรการฝึกอบรมแพทย์ประจำบ้านต่อยอดเพื่อวุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม อนุสาขาอายุรศาสตร์ผู้สูงอายุ ดังนี้
+                    <br>ก. นักศึกษาแพทย์ปีที่ 4 ,ปีที่ 5 และปีที่ 6 สอนที่คลินิกผู้สูงอายุ โดยสอนกลุ่มย่อยดังนี้
+                    <br>- สอนนักศึกษาแพทย์ปี 4 226 คน/ปี
+                    <br>- สอนนักศึกษาแพทย์ปี 5 237 คน/ปี
+                    <br>- สอนนักศึกษาแพทย์ปี 6 239 คน/ปี
+                    <br>- Small group นักศึกษาแพทย์ปี 4 226 คน/ปี
+                    <br>- Small group นักศึกษาแพทย์ปี 5 237 คน/ปี
+                    <br>ข. แพทย์ประจำบ้านอายุรศาสตร์ปีที่ 1 ซึ่งปฏิบัติงานที่หอผู้ป่วยพิเศษของภาควิชาฯ ทุกสอง สัปดาห์ รวมปีละ 26 ครั้ง
+                    <br>ค. แพทย์ประจำบ้านอายุรศาสตร์ปีที่ 2 และ ปีที่ 3 ซึ่งหมุนเวียนมาปฏิบัติงานในสาขาวิชาฯ ทุกเดือนเดือนละ 3-4 คน โดยจัดการสอนแบบ
+                    <br>- Bedside teaching 52 ครั้ง/ปี
+                    <br>- Core lecture 36 ครั้ง/ปี
+                    <br>- Journal club 49 ครั้ง/ปี
+                    <br>- Topic review 49 ครั้ง/ปี
+                    <br>- Grand round 49 ครั้ง/ปี
+                    <br>ง. แพทย์ประจำบ้านต่อยอด จะเริ่มต้นการฝึกอบรมในวันที่ 1 มิถุนายน ของทุกปี ซึ่งจะรับแพทย์ปีละ 3 คน โดยเป็นหลักสูตร 2 ปี ซึ่งหลักสูตรโดยย่อในแต่ละชั้นปี ประกอบด้วย
+                    ปีที่ 1
+                    <br>1. ด้านความรู้ จัดให้แพทย์ประจำบ้านต่อยอด ร่วมในกิจกรรมต่างๆ ต่อไปนี้
+                    <br>1. Journal club เข้าร่วม 1 ครั้งต่อสัปดาห์ เป็นผู้นำเสนอ 1 ครั้งต่อเดือน
+                    <br>2. Topic review เข้าร่วม 1 ครั้งต่อสัปดาห์ เป็นผู้นำเสนอ 1 ครั้งต่อเดือน
+                    <br>3. Grand round เข้าร่วม 1 ครั้งต่อสัปดาห์
+                    <br>4. ให้เข้าร่วมกิจกรรมทางวิชาการส่วนกลางของภาควิชา
+                    <br>2. ด้านทักษะ
+                    <br>ก. ให้แพทย์ประจำบ้านต่อยอด ปฏิบัติงานทางคลินิกภายใต้การดูแลของอาจารย์ในสาขา ดังต่อไปนี้
+                    <br>(1) ดูแลผู้ป่วยในสูงอายุ โดยดูแลผู้ป่วยในรับปรึกษาของภาควิชาอายุรศาสตร์ และผู้ป่วยปรึกษานอกภาควิชา เป็นระยะเวลา 9 เดือน
+                    <br>(2) ดูแลผู้สูงอายุ ที่อยู่ในสถานอภิบาลคนชรา โดยการออกเยี่ยมสถานอภิบาลคนชรา เดือนละ 2 ครั้ง อย่างต่อเนื่อง ตลอดช่วงเวลา 9 เดือน
+                    <br>(3) ดูแลผู้ป่วยในสูงอายุ ที่เป็นผู้ป่วยระยะสุดท้าย โดยอาจมีทั้งผู้ป่วย ที่เคยดูแลต่อเนื่องมาจากในคลินิกสูงอายุ หรือ ผู้ป่วยรับปรึกษา อย่างน้อย 12 ราย ใน 1 ปี
+                    <br>(4) ดูแลผู้ป่วยนอกสูงอายุ ในคลินิกผู้สูงอายุ สัปดาห์ละ 2 วัน
+                    <br>(5) ดูแลผู้สูงอายุที่มีสุขภาพดีที่มารับการตรวจคัดสุขภาพประจำปี
+                    <br>ข. ให้แพทย์ประจำบ้านต่อยอด ปฏิบัติงานทางคลินิกนอกสาขาวิชา ดังต่อไปนี้
+                    <br>(1) มีประสบการณ์ในการดูแลผู้ป่วยสูงอายุที่มีปัญหาทางด้านจิตเวช โดยมีการ ปฏิบัติงานที่ภาควิชาจิตเวชศาสตร์ สาขาจิตเวชผู้สูงอายุ เป็นเวลา 1 เดือน
+                    <br>(2) มีประสบการณ์ในการดูแลผู้ป่วยสูงอายุที่มีปัญหากระดูกหัก โดยมีการปฏิบัติงานที่ภาควิชาออร์โธปิดิกส์ เป็นเวลา 1 เดือน
+                    <br>(3) ประสบการณ์ในการดูแลผู้ป่วยสูงอายุในด้านเกี่ยวกับเวชศาสตร์ฟื้นฟู โดยมีการปฏิบัติงานกับอาจารย์ภาควิชาเวชศาสตร์ฟื้นฟูอย่างต่อเนื่องทั้งปี
+                    <br>(4) ผ่านการเรียนในรายวิชา research methodology ซึ่งจัดโดยสถานส่งเสริมการวิจัย คณะแพทยศาสตร์ศิริราชพยาบาล
+                    <br>ค. เป็นที่ปรึกษาของแพทย์ประจำบ้านอายุรศาสตร์ในปัญหาที่เกี่ยวกับสาขาเวชศาสตร์ผู้สูงอายุ ภายใต้การดูแลของอาจารย์ในสาขาวิชา
+                    <br>3. ปฏิบัติงานทางด้านวิจัย โดยเสนอโครงการวิจัย 1 เรื่อง
+                    ปีที่ 2
+                    <br>ปฏิบัติงานต่าง ๆ แบบเดียวกับปีที่ 1 แต่ในฐานะผู้ให้คำปรึกษาที่มีความเชี่ยวชาญมากขึ้น โดยมีแนวการปฏิบัติงานโดยย่อดังนี้
+                    <br>1. ด้านความรู้ เป็นผู้จัดการประชุมวิชาการและจัดอภิปรายปัญหา
+                    <br>2. ด้านทักษะ
+                    <br>(1) เป็นที่ปรึกษา ควบคุมดูแลแพทย์ประจำบ้านที่ปฏิบัติงานในสาขาวิชา
+                    <br>(2) เป็นผู้นำกลุ่มในการสั่งการให้การรักษา หรือรับปรึกษาผู้ป่วยสูงอายุ
+                    <br>(3) ปฏิบัติงานรับปรึกษาผู้ป่วยใน และดูแลผู้ป่วยนอก ในคลินิกผู้สูงอายุ
+                    <br>3. มีประสบการณ์ ในการดูแลผู้ป่วยสูงอายุในด้าน geriatric nutrition และ geriatric neurology
+                    <br>4. ด้านงานวิจัย : มีผลงานวิจัยที่เป็นผู้นิพนธ์ชื่อแรก 1 เรื่อง
+            </p>
+            <div id="body" class="page-header">
+                <h3>งานบริการของสาขาวิชา</h3>
+            </div>
+            <p> สาขาวิชาอายุรศาสตร์ปัจฉิมวัย จัดให้มีงานบริการทางการแพทย์สำหรับผู้ป่วยนอก ผู้ป่วยใน และบุคคลภายนอกคณะ ดังนี้
+                <br>ก. คลินิกผู้สูงอายุ สัปดาห์ละ 2 ครั้ง ทุกวันอังคารเวลา 09.00 น. ถึง 12.00 น. และทุกวันพฤหัสบดีเวลา 13.00 น. ถึง 15.00 น. (ร่วมกับภาควิชาเวชศาสตร์ป้องกันและสังคม)
+                <br>ผู้ป่วยปี 2554 จำนวน 3,371 ราย
+                <br>ผู้ป่วยปี 2555 จำนวน 5,446 ราย
+                <br>ข. รับปรึกษาปัญหาผู้ป่วยสูงอายุ ทั้งจากหอผู้ป่วยอายุรศาสตร์ และจากภาควิชาอื่น
+                <br>ผู้ป่วยปี 2554 จำนวน 312 ราย
+                <br>ผู้ป่วยปี 2555 จำนวน 334 ราย 
+                <br>ค. รับปรึกษาปัญหาผู้ป่วยสูงอายุ ทางโทรศัพท์ และสอนปฏิบัติในการดูแลผู้ป่วยสูงอายุ ในคลินิกผู้สูงอายุ หอผู้ป่วยอายุรศาสตร์ และภาควิชาอื่น
+                ผู้ป่วยปี 2555 จำนวน 308 ราย
+                <br>ง. จัดทำโครงการฝึกอบรมหลักสูตร “หลักการดูแลผู้สูงอายุในสถานสงเคราะห์คนชราบ้านบางแค 1,สถานสงเคราะห์คนชราบ้านบางแค 2 และศูนย์บริการผู้สูงอายุดินแดง” ปี 2555 
+                โดยเริ่มตั้งแต่เดือนพฤษภาคม 2555 ถึง เดือนเมษายน 2556 เพื่อให้ผู้สูงอายุและผู้ดูแลในสถานสงเคราะห์คนชราบ้านบางแค 1,สถานสงเคราะห์คนชราบ้านบางแค 2 และศูนย์บริการผู้สูงอายุดินแดงที่ผ่านการฝึกอบรมได้รับความรู้ 
+                ความเข้าใจในหลักการดูแลผู้สูงอายุและโรคที่พบบ่อยในผู้สูงอายุ โดยแบ่งเป็น
+                <br>1. ภาคทฤษฎี (รวม36 ชั่วโมง)สอนบรรยายในหัวข้อดังต่อไปนี้
+                โรคและภาวะที่พบบ่อยในผู้สูงอายุหลักการดูแลรักษาโรคความดันโลหิตสูง เบาหวาน และไขมันในเลือดสูงโดยใช้ยาและไม่ใช้ยาภาวะสมองเสื่อมและหลักการดูแลปัญหาทางอารมณ์และ
+                พฤติกรรมในผู้ป่วยสูงอายุที่มีภาวะสมองเสื่อมภาวะซึมเศร้าและกิจกรรมบำบัดในผู้ป่วยที่มีภาวะซึมเศร้าหลักการป้องกันการแพร่กระจายเชื้อระหว่างผู้ป่วยกับผู้ป่วยและระหว่างผู้ดูแลกับผู้ป่วยและ
+                การให้วัคซีนในผู้สูงอายุสูตรอาหารที่เหมาะสมในผู้ป่วยสูงอายุที่มีภาวะทุพโภชนาการและหลักการการให้อาหารทางสายยางที่ถูกต้องภาวะหกล้มบ่อยในผู้สูงอายุและการป้องกันและหลักการการดูแลผู้ป่วยสูงอายุที่อยู่ในวาระสุดท้ายของชีวิต
+                <br>2. ภาคปฏิบัติ (รวม 10 ชั่วโมง) สอนสาธิตและฝึกปฏิบัติในหัวข้อดังต่อไปนี้ แผลกดทับ การป้องกันการเกิดแผลกดทับและการดูแลแผลกดทับเบื้องต้นการป้องกันการสำลัก
+                และปอดอักเสบจากการสำลักเทคนิคปลอดเชื้อการล้างมือ การสวมถุงมือและการป้องกันการแพร่กระจายเชื้อระหว่างผู้ป่วยกับผู้ป่วย และระหว่างผู้ดูแลกับผู้ป่วย
+                <br>จ. ร่วมกับภาควิชาเวชศาสตร์ป้องกันและสังคม จัดงานการอบรมผู้ดูแลผู้ป่วยสมองเสื่อม ปีละ 1 ครั้ง
+                <br>ฉ. เป็นที่ปรึกษาในโครงการภายนอกคณะแพทยศาสตร์ศิริราช ในฐานะผู้เชี่ยวชาญทางวิชาการ ได้แก่ 
+                เป็นที่ปรึกษาโครงการศึกษาวิจัยผลกระทบและภาระการดูแลผู้สูงอายุระยะยาวภายใต้วัฒนธรรมไทย ของ สำนักวิจัยเพื่อสุขภาพ (สวสส)
+            </p>
+            <div id="body" class="page-header">
+                <h3>งานวิจัย</h3>
+            </div>
+            <p>สาขาวิชาฯ มีงานวิจัยที่ได้นำเสนอในการประชุม และมีงานวิจัยที่ตีพิมพ์ในวารสารวิชาการทั้งในและต่างประเทศ อย่างต่อเนื่อง</p>
+            <div id="body" class="page-header">
+                <h3>ติดต่อ / สอบถาม</h3>
+            </div>
+            <p> สำนักงาน: สาขาวิชาอายุรศาสตร์ปัจฉิมวัย ภาควิชาอายุรศาสตร์ โรงพยาบาลศิริราช 
+                <br>โทรศัพท์/โทรสาร: 02-4197196
+            </p>
+            <div id="header" class="page-header">
+                <h3>อาจารย์ประจำสาขาวิชา</h3>
+            </div>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/q1.jpg" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">รศ.พญ. วราลักษณ์ ศรีนนท์ประเสริฐ <br>หัวหน้าสาขา</h4>
+                    <li>Master of Medicine with Honor(Clinical Epide miology)</li>
+                    <li>Clinical Fellow in geriatric Medicine</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/q2.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">รศ.นพ. รุ่งนิรันดร์ ประดิษฐสุวรรณ <br>อาจารย์</h4>
+                    <li>Certificate Fellowship in Geriatric Medicine</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาประสาทวิทยา</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์ทั่วไป</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/q3.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">อ.พญ. จินตนา อาศนะเสน <br>อาจารย์</h4>
+                    <li>Certificate of Research Fellowship in Behavioral Neurology</li>
+                    <li>Certificate in Geriatric Medicine</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์ทั่วไป</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/q4.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">อ.พญ. ฐิติมา ว่องวิริยะวงศ์ <br>อาจารย์</h4>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                    <li>แพทยศาสตรบัณฑิต เกียรตินิยมอันดับ 1</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/q5.jpg" class="media-object" style="width:100px">
+                </div>
+                    <div class="post-body">    
+                    <h4 class="media-heading">อ.พญ. ปทุมพร สุรอรุณสัมฤทธิ์ <br>อาจารย์</h4>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์ทั่วไป</li>
+                    <li>แพทยศาสตรบัณฑิต</li>
+                </div>
+            </article>
+            <br>
+        </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-socials">
+                <a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" data-toggle="tooltip" title="Instagram"><i class="fa fa-instagram"></i></a>
+                <a href="#" data-toggle="tooltip" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+            </div>			
+            <div class="footer-bottom">
+                <i>ภาควิชาอายุรศาสตร์ รพ.ศิริราช ตึกอัษฎางค์ ชั้น4 แขวงศิริราช เขตบางกอกน้อย กรุงเทพมหานคร 10700 โทร.02-419-7767-69</i>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

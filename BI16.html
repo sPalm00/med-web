@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ภาควิชาอายุรศาสตร์ คณะแพทยศาสตร์ศิริราชพยาบาล</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    #header {
+        border-bottom: 3px solid gold;
+    }
+	.row {padding-top :20px;}
+    .affix{
+		top: 0;
+		width: 100%;
+		z-index: 9999 !important;
+	}
+	.affix + .container-fluid{
+		padding-top: 70px;
+	}
+	body{
+		background-color: #ffffff;
+	}
+	footer{
+		background-color: #104697;
+	}
+	.navbar {
+		background-color : #104697;
+	}
+	.navbar-inverse .navbar-nav .nav-link {
+    color: #ffffff;
+	}
+	.navbar-inverse .nav-item:hover .nav-link {
+    color: #ffffff;
+	}
+	.navbar-inverse .dropdown-menu {
+    background-color: #3180F5;
+	}
+	.navbar-inverse .dropdown-item {
+    color: #ffffff;
+	}
+	.navbar-inverse .dropdown-item:hover,
+	.navbar-inverse .dropdown-item:focus {
+    color: #ffffff;
+    background-color: rgba(255,255,255,.5);
+	}
+</style>
+<body>
+	<div class="container-fluid " id="headerimages" style="background-color:#ffffff">
+		<img src="images/Si_Th_H_Color.png" style="width: 600px">
+	</div>
+	<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="250">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="index.html" ><i class="fa fa-home"> หน้าหลัก</a></li></i>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown">ข้อมูลองค์กร<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="Information.html">ประวัติภาควิชา</a></li>
+							<li><a class="dropdown-item" href="Information.html#inform">วิสัยทัศน์/พันธกิจ</a></li>
+							<li><a class="dropdown-item" href="structure.html">โครงสร้างการบริหารภาค</a></li>
+							<li><a class="dropdown-item" href="department.html">รายนามหัวหน้าภาค</a></li>
+							<li><a class="dropdown-item" href="Com.html">กรรมการบริหารภาค</a></li>
+							<li><a class="dropdown-item" href="Branch.html">รายระเอียดสาขาวิชา</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown">บุคลากร<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="personnel.html">บุคลากร</a></li>
+								<li><a class="dropdown-item" href="#">เกียรติยศอายุรศาสตร์</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown">ข่าวสาร<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="news.html">ข่าวประชาสัมพันธ์</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวกิจกรรม</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวการศึกษาก่อนปริญญา</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวการศึกษาหลังปริญญา</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="other.html">อื่นๆ</a></li>
+						<li class="nav-item"><a class="nav-link" href="Contact.html">ติดต่อ/สอบถาม</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user"></i> เข้าสู่ระบบ<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<div class="container">
+									<form action="/action_page.php">
+										<div class="form-group row">
+											<div class="col-xs-2">
+												<label for="user">Username:</label>
+												<input type="user" class="form-control" id="user" placeholder="Enter user" name="user" size="20" maxlength="20">
+											</div>
+											<div class="col-xs-3">
+												<label for="pwd">Password:</label>
+												<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" size="20" maxlength="20">
+											</div>
+											<button type="submit" class="btn btn-default">Submit</button>
+										</div>
+									</form>
+								</div>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+        <div class="container">
+            <div id="header" class="page-header">
+                <h2>สาขาวิชาหทัยวิทยา</h2>
+            </div>
+            <div id="body" class="page-header">
+                <h3>ข้อมูลสาขาวิชา</h3>
+            </div>
+            <p>
+            </p>
+            <div id="body" class="page-header">
+                <h3>งานบริการของสาขาวิชา</h3>
+            </div>
+            <p>
+            </p>
+            <div id="body" class="page-header">
+                <h3>ติดต่อ / สอบถาม</h3>
+            </div>
+            <p> สำนักงาน: ศูนย์โรคหัวใจสมเด็จพระบรมราชินีนาถ 
+                <br>โทรศัพท์: 0-2419-6104-5
+            </p>
+            <div id="header" class="page-header">
+                <h3>อาจารย์ประจำสาขาวิชา</h3>
+            </div>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/p1.jpg" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">ศ.นพ. รุ่งโรจน์ กฤตยพงษ์ (ศ.11)<br>หัวหน้าสาขา</h4>
+                    <li>Certificate Fellowship in Research Cardiology</li>
+                    <li>Certificate Fellowship in Cardiac Electrophysiology</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคหัวใจ</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/p18.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">อ.นพ. นราธิป ชุณหะมณีวัฒน์ <br>อาจารย์</h4>
+                    <li>American Board of Internal Medicine: Interventional Cardiology</li>
+                    <li>American Board of Internal Medicine: Cardiovascular Disease</li>
+                    <li>American Board of Internal Medicine</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/p2.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">ศ.คลินิก นพ. ประดิษฐ์ ปัญจวีณิน <br>อาจารย์</h4>
+                    <li>ประกาศนียบัตรเป็นผู้มีความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม อนุสาขาหัตถการปฏิบัติรักษาโรคหัวใจและหลอดเลือด</li>
+                    <li>Certificate Fellowship in Invasive Cardiology</li>
+                    <li>อนุมัติบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคหัวใจ</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/p3.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">รศ.นพ. ดำรัส ตรีสุโกศล <br>อาจารย์</h4>
+                    <li>ประกาศนียบัตรเป็นผู้มีความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม อนุสาขาหัตถการปฏิบัติรักษาโรคหัวใจและหลอดเลือด</li>
+                    <li>Certificate Fellowship in Intervention Cardiology</li>
+                    <li>อนุมัติบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคหัวใจ</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/p4.jpg" class="media-object" style="width:100px">
+                </div>
+                    <div class="post-body">    
+                    <h4 class="media-heading">รศ.นพ. เดโช จักราพานิชกุล <br>อาจารย์</h4>
+                    <li>Certificate in Echocardiography</li>
+                    <li>อนุมัติบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาเวชศาสตร์ครอบครัว</li>
+                    <li>Certificate in Research Fellowship in Echocardiograph</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/p5.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">รศ.นพ. เรวัตร พันธุ์กิ่งทองคำ <br>อาจารย์</h4>
+                    <li>ประกาศนียบัตรเป็นผู้มีความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม อนุสาขาหัตถการปฏิบัติรักษาโรคหัวใจและหลอดเลือด</li>
+                    <li>วิทยาศาสตร์มหาบัณฑิต</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคหัวใจ</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/p6.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">รศ.พญ. วิวรรณ ทังสุบุตร <br>อาจารย์</h4>
+                    <li>ประกาศนียบัตรเป็นผู้มีความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม อนุสาขาหัตถการปฏิบัติรักษาโรคหัวใจและหลอดเลือด</li>
+                    <li>American Board of Intervention Cardiology</li>
+                    <li>American Board of Cardiovascular Disease</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/p17.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">อ.นพ. อาจบดินทร์ วินิจกุล <br>อาจารย์</h4>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรมสาขาอายุรศาสตร์โรคหัวใจ</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรมสาขาอายุรศาสตร์</li>
+                    <li>แพทยศาสตร์บัณฑิต (เกียรตินิยมอันดับ 1)</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/p7.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">รศ.พญ. วรางคณา บุญญพิสิฏฐ์ <br>อาจารย์พิเศษ </h4>
+                    <li>Certificate Fellowship in Clinical Cardiac Electrophysiology</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคหัวใจ</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/p8.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">ผศ.พญ. เมทินี กิตติโพวานนท์ <br>อาจารย์พิเศษ </h4>
+                    <li>Certificate Fellowship in Echocardiography</li>
+                    <li>อนุมัติบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขา.เวชศาสตร์ครอบครัว</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคหัวใจ</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/p9.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">รศ.พญ. นิธิมา รัตนะสิทธิ์ <br>อาจารย์พิเศษ </h4>
+                    <li>Certificate in Echocardiography</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคหัวใจ</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/p10.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">รศ.นพ. สัชชนะ พุ่มพฤกษ์ <br>อาจารย์พิเศษ </h4>
+                    <li>Certificate fellowship in clinical electrophysiology</li>
+                    <li>อนุมัติบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาเวชศาสตร์ครอบครัว</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรมอนุสาขาอายุรศาสตร์โรคหัวใจ</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/p11.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">ผศ.นพ. อดิศักดิ์ มณีไสย <br>อาจารย์พิเศษ </h4>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์หัวใจ</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                    <li>แพทยศาสตรบัณฑิต เกียรตินิยมอันดับ 1</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/p12.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">ศ.พญ. ธนัญญา บุณยศิรินันท์ <br>อาจารย์พิเศษ </h4>
+                    <li>Diplomate of the Certification Board of Cardiovascular Computed Tomography, Society of Cardiovascular Computed Tomography</li>
+                    <li>อนุมัติบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาเวชศาสตร์ครอบครัว</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์หัวใจ</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/p13.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">รศ.นพ. ณัฐวุฒิ วงษ์ประภารัตน์ <br>อาจารย์พิเศษ </h4>
+                    <li>ประกาศนียบัตรผู้มีความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม อนุสาขาหัตถการปฎิบัติรักษาโรคหัวใจและหลอดเลือด</li>
+                    <li>Diplomate, American Board of Vascular Medicine</li>
+                    <li>Diplomate, American Board of Vascular Medicine Subspecialty in Endovascular Medicine (Peripheral Interventions)</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/p14.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">อ.พญ. ศรีสกุล จิรกาญจนากร <br>อาจารย์พิเศษ </h4>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคหัวใจ</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                    <li>แพทยศาสตร์บัณฑิต (เกียรตินิยมอันดับ 1)</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/p15.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">อ.พญ. อริศรา สุวรรณกูล <br>อาจารย์พิเศษ </h4>
+                    <li>Certificate Fellowship in Clinical Cardiac Electrophysiology</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม อนุสาขาอายุรศาสตร์โรคหัวใจ</li>
+                    <li>อนุมัติบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาเวชศาสตร์ครอบครัว</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/p16.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">อ.นพ. สาธิต เจนวณิชสถาพร <br>อาจารย์พิเศษ </h4>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคหัวใจ</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                    <li>แพทยศาสตรบัณฑิต (เกียรตินิยมอันดับ 2)</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/p19.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">อ.นพ. ยอดยิ่ง เกาลวณิชย์ <br>อาจารย์พิเศษ </h4>
+                </div>
+            </article>
+            <br>
+        </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-socials">
+                <a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" data-toggle="tooltip" title="Instagram"><i class="fa fa-instagram"></i></a>
+                <a href="#" data-toggle="tooltip" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+            </div>			
+            <div class="footer-bottom">
+                <i>ภาควิชาอายุรศาสตร์ รพ.ศิริราช ตึกอัษฎางค์ ชั้น4 แขวงศิริราช เขตบางกอกน้อย กรุงเทพมหานคร 10700 โทร.02-419-7767-69</i>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

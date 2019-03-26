@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ภาควิชาอายุรศาสตร์ คณะแพทยศาสตร์ศิริราชพยาบาล</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    #header {
+        border-bottom: 3px solid gold;
+    }
+	.row {padding-top :20px;}
+    .affix{
+		top: 0;
+		width: 100%;
+		z-index: 9999 !important;
+	}
+	.affix + .container-fluid{
+		padding-top: 70px;
+	}
+	body{
+		background-color: #ffffff;
+	}
+	footer{
+		background-color: #104697;
+	}
+	.navbar {
+		background-color : #104697;
+	}
+	.navbar-inverse .navbar-nav .nav-link {
+    color: #ffffff;
+	}
+	.navbar-inverse .nav-item:hover .nav-link {
+    color: #ffffff;
+	}
+	.navbar-inverse .dropdown-menu {
+    background-color: #3180F5;
+	}
+	.navbar-inverse .dropdown-item {
+    color: #ffffff;
+	}
+	.navbar-inverse .dropdown-item:hover,
+	.navbar-inverse .dropdown-item:focus {
+    color: #ffffff;
+    background-color: rgba(255,255,255,.5);
+	}
+</style>
+<body>
+	<div class="container-fluid " id="headerimages" style="background-color:#ffffff">
+		<img src="images/Si_Th_H_Color.png" style="width: 600px">
+	</div>
+	<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="250">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="index.html" ><i class="fa fa-home"> หน้าหลัก</a></li></i>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown">ข้อมูลองค์กร<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="Information.html">ประวัติภาควิชา</a></li>
+							<li><a class="dropdown-item" href="Information.html#inform">วิสัยทัศน์/พันธกิจ</a></li>
+							<li><a class="dropdown-item" href="structure.html">โครงสร้างการบริหารภาค</a></li>
+							<li><a class="dropdown-item" href="department.html">รายนามหัวหน้าภาค</a></li>
+							<li><a class="dropdown-item" href="Com.html">กรรมการบริหารภาค</a></li>
+							<li><a class="dropdown-item" href="Branch.html">รายระเอียดสาขาวิชา</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown">บุคลากร<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="personnel.html">บุคลากร</a></li>
+								<li><a class="dropdown-item" href="#">เกียรติยศอายุรศาสตร์</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown">ข่าวสาร<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="news.html">ข่าวประชาสัมพันธ์</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวกิจกรรม</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวการศึกษาก่อนปริญญา</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวการศึกษาหลังปริญญา</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="other.html">อื่นๆ</a></li>
+						<li class="nav-item"><a class="nav-link" href="Contact.html">ติดต่อ/สอบถาม</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user"></i> เข้าสู่ระบบ<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<div class="container">
+									<form action="/action_page.php">
+										<div class="form-group row">
+											<div class="col-xs-2">
+												<label for="user">Username:</label>
+												<input type="user" class="form-control" id="user" placeholder="Enter user" name="user" size="20" maxlength="20">
+											</div>
+											<div class="col-xs-3">
+												<label for="pwd">Password:</label>
+												<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" size="20" maxlength="20">
+											</div>
+											<button type="submit" class="btn btn-default">Submit</button>
+										</div>
+									</form>
+								</div>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+        <div class="container">
+            <div id="header" class="page-header">
+                <h2>สาขาวิชาต่อมไร้ท่อและเมตะบอลิสม</h2>
+            </div>
+            <div id="body" class="page-header">
+                <h3>งานการเรียนการสอน</h3>
+            </div>
+            <p> ศ.นพ.สุนทร ตัณฑนันทน์ ร่วมกับภาควิชาสูตินรีเวช (ศ.นพ.สาโรจน์ ปรปักษ์ขาม) และกุมารเวชศาสตร์ (ศ.นพ.ชวลิต ปรียาสมบัติ) 
+                ได้ร่วมกันเขียนตำราต่อมไร้ท่อสำหรับนักศึกษาแพทย์ ชื่อ “Endocrinology” เป็นครั้งแรก เมื่อปี พ.ศ. 2508 ซึ่งนับเป็นตำราภาษาไทยเฉพาะทางในยุคแรกๆ ของประเทศไทย และได้มีการตีพิมพ์ซ้ำถึง 5 ครั้ง 
+                จนกระทั่งครั้งที่ 6 เมื่อปี พ.ศ. 2527 ได้มีการเปลี่ยนแปลงใหม่เป็นตำรา “Endocrinology ทางอายุรศาสตร์” (โดย อภิชาติ วิชญาณรัตน์, สาธิต วรรณแสง และ วรรณี นิธิยานันท์) โดยตำราเล่มหลังนี้ทางโครงการตำรา-ศิริราช (ศ.นพ.ภูเก็ต วาจานนท์) 
+                ได้เริ่มนำวิธีการทับศัพท์ที่เป็นแบบผสมระหว่าง การถ่ายเสียงกับการถ่ายอักษรมาใช้เป็นครั้งแรกในการเขียนตำราทางวิชาการเป็นภาษาไทย สำหรับการสอนวิชาต่อมไร้ท่อแก่นักศึกษาแพทย์ได้เริ่มบรรจุเป็นหลักสูตรชัดเจน ตั้งแต่ปี พ.ศ. 2478 
+                โดยในหลักสูตรวิชาอายุรศาสตร์ในปี พ.ศ. 2478 นั้น วิชาเอ็นโดไครน์และเมตาบอลิสม เป็นการสอนบรรยายในชั้นปีที่ 3 อยู่ในวิชา General and Systemic Medicine ซึ่งอาจารย์นายแพทย์ใช้ ยูนิพันธ์ รับช่วงต่อมาจาก ศ.นพ.ประเสริฐ กังสดาลย์ และน่าจะสอนวิชานี้เป็นเวลานานร่วม 10 ปี 
+                จนอาจารย์ลาออกจากราชการเมื่อปี พ.ศ. 2487 ในปัจจุบันสาขาวิชาฯ รับผิดชอบการสอนนักศึกษาแพทย์ชั้นปีที่ 3, 4, 5 และ 6 แพทย์ประจำบ้านอายุรศาสตร์ปีที่ 2 และ 3 ที่หมุนเวียนผ่านสาขาวิชา และแพทย์ประจำบ้านต่อยอด โดยสาขาวิชาฯ ได้เริ่มเปิดฝึกอบรมแพทย์ประบ้านต่อยอดหรือแพทย์เฟลโลว์ 
+                เฉพาะทางโรคต่อมไร้ท่อและเมตะบอลิสม มาตั้งแต่ ปี พ.ศ. 2540 โดยใช้เวลาฝึกอบรมนาน 2 ปี จนถึงปัจจุบันมีแพทย์ประจำบ้านต่อยอดจบการฝึกอบรมได้วุฒิบัตรผู้เชี่ยวชาญในสาขาวิชาแล้วทั้งสิ้น 10 คน
+            </p>
+            <div id="body" class="page-header">
+                <h3>งานบริการของสาขาวิชา</h3>
+            </div>
+            <p> ศ.นพ.สุนทร ตัณฑนันทน์ ได้เริ่มก่อตั้งคลินิกเฉพาะโรคของต่อมไร้ท่อขึ้นมาครั้งแรก คือ คลินิกโรคเบาหวานเมื่อปี พ.ศ. 2502 และคลินิกโรคต่อมไร้ท่อเมื่อปี พ.ศ. 2502 เช่นกัน ซึ่งคลินิกทั้งสองได้ให้บริการแก่ผู้ป่วยโรคเบาหวานและโรคต่อมไร้ท่อโดยเฉพาะโรคธัยรอยด์มาอย่างต่อเนื่องจนถึงปัจจุบัน 
+                ในระยะแรกคลินิกเบาหวานได้เปิดให้บริการทุกวันไม่เว้นวันหยุด เนื่องจากให้บริการฉีดอินสุลินแก่ผู้ป่วยเบาหวานทุกวัน จนกระทั่งวิธีการฉีดอินสุลินได้มีการพัฒนามาจนสอนให้ผู้ป่วยฉีดยาเองได้ จึงได้ลดการบริการมาเป็นสัปดาห์ละครั้ง ตั้งแต่ประมาณปี พ.ศ. 2520 เป็นต้นมา สาขาวิชาฯ 
+                ให้การบริการดูแลรักษาผู้ป่วยที่มีปัญหาโรคต่อมไร้ท่อ ดังนี้ (ข้อมูลในปี พ.ศ.2548)
+                <br>-ผู้ป่วยในคลินิกโรคเบาหวาน จำนวน 4,833 รายต่อปี 
+                <br>-ผู้ป่วยโรคต่อมไร้ท่ออื่นๆ ซึ่งส่วนใหญ่ ได้แก่ ผู้ป่วยโรคธัยรอยด์ จำนวน 11,480 รายต่อปี
+                <br>-คลินิก fine needle aspiration ของต่อมธัยรอยด์ จำนวน 437 ราย
+                <br>-บริการตรวจวัดความหนาแน่นเกลือแร่กระดูกแก่ผู้ป่วยทั่วไปในเวลาราชการ จำนวน 1,542 รายต่อปี คิดเป็นตำแหน่งที่ให้บริการ 4,043 ตำแหน่ง และผู้ป่วยคลินิกนอกเวลาราชการ จำนวน 1,434 ราย คิดเป็นตำแหน่งที่ให้บริการ 3,907 ตำแหน่ง
+                <br>-บริการการตรวจทางห้องปฏิบัติการ 1,300 ราย คิดเป็นการทดสอบที่ให้บริการตรวจวัด 3,000 การทดสอบ โดยให้บริการตรวจวัดฮอร์โมน เปปไทด์ และอื่นๆ ที่เกี่ยวข้องรวม 10 รายการ 
+                <br>-บริการทดสอบการทำงานของระบบต่อมไร้ท่อ ณ ห้องปฏิบัติการ ตึกผะอบชั้น 2 รวม 140 การทดสอบ
+                <br>-รับปรึกษาผู้ป่วยใน ซึ่งมีปัญหาโรคต่อมไร้ท่อ จำนวน 1,438 ราย
+            </p>
+            <div id="body" class="page-header">
+                <h3>งานวิจัย</h3>
+            </div>
+            <p> สาขาวิชาฯ ได้ดำเนินการวิจัยตั้งแต่ก่อตั้งสาขาวิชามาอย่างต่อเนื่อง งานวิจัยในระยะแรกๆ ส่วนใหญ่เป็นการวิจัยทางคลินิก เช่น รายงานผู้ป่วยเป็นรายๆ หรือ case series ใหญ่ โดยเฉพาะผู้ป่วยเบาหวานและโรคต่อมธัยรอยด์ 
+                มีการวิจัยทดลองยาเบาหวาน (HB 419 หรือ glibenclamide) ที่คลินิกเบาหวานเป็นครั้งแรกเมื่อประมาณปี พ.ศ. 2518 ต่อมาสาขาวิชาฯ ได้เริ่มวิจัยด้านระบาดวิทยาของโรคเบาหวานและพยาธิสรีรวิทยาของโรคเบาหวานโดยเฉพาะชนิดที่ 1 และโรคเบาหวานชนิด fibrocalcific pancreatic diabetes (FCPD) 
+                และในระยะหลังได้เริ่มโครงการวิจัยใหม่ๆ ทางด้าน bone metabolism อณูพันธุศาสตร์ของโรคเบาหวานชนิด maturity onset diabetes of the young (MODY) และโรคเบาหวานชนิดที่ 2 และการศึกษา phase 3-clinical trial ยารักษาโรคเบาหวาน และ osteoporosis ในเรื่องของทุนวิจัยนั้น สาขาวิชาฯ 
+                ได้รับทุนวิจัยมาอย่างต่อเนื่องเป็นเวลานานจากหลายแหล่งทุน เช่น มูลนิธิร๊อคกี้เฟลเลอร์ และ China Medical Board สหรัฐอเมริกา ทุนวิจัยของ National Epidemiology Board ของประเทศไทย ทุนวิจัยของคณะแพทยศาสตร์ศิริราชพยาบาลและของศูนย์พันธุวิศวกรรมและเทคโนโลยีชีวภาพแห่งชาติ เป็นต้น ในปัจจุบันสาขาวิชากำลังดำเนินโครงการวิจัยอยู่ทั้งสิ้น 15 โครงการ 
+                นอกจากนี้ยังมีโครงการวิจัยย่อยโดยแพทย์ประจำบ้าน และแพทย์ประจำบ้านต่อยอดปีละ 1-3 โครงการ ที่อาจารย์ในสาขาวิชาต่อมไร้ท่อฯ เป็นผู้ควบคุมการวิจัย
+                <br>อาจารย์และนักวิทยาศาสตร์ของสาขาวิชา มีผลงานวิจัยตีพิมพ์ในวารสารวิชาการ จนถึงปี พ.ศ.2548 รวมทั้งสิ้นมากกว่า 300 เรื่อง และผลงานที่ตีพิมพ์ในวารสารวิชาการนานาชาติที่สืบค้นได้จากฐานข้อมูล Medline มากกว่า 100 เรื่อง ผลงานวิจัย และผลงานที่นำมาใช้เป็นประโยชน์ และทำชื่อเสียงให้แก่หน่วยงาน ได้แก่
+                <br>-สาขาวิชาต่อมไร้ท่อฯ ร่วมกับภาควิชาสรีรวิทยา (ศ.นพ.อภิชาติ วิชญาณรัตน์ และ รศ.พญ.พัชรา วิสุตกุล) ได้ริเริ่มนำเอาวิธี Radioimmunoassay (RIA) ของการวัดระดับฮอร์โมนในเลือดมาใช้เป็นครั้งแรกในประเทศไทย เมื่อปี พ.ศ. 2513 ในการวัดระดับฮอร์โมนอินสุลิน และภาควิชารังสีวิทยา (ศ.นพ.ร่มไทร สุวรรณิก และคณะ) ในการวัดระดับธัยรอยด์ฮอร์โมน ต่อมาเริ่มทำวิจัยในผู้ป่วยธาลัสซีเมีย (ศิริรัตน์ พลอยบุตร, พัชรา วิสุตกุล และสาธิต วรรณแสง สารศิริราช 2519,28:187-203) ซึ่งวิธี RIA นี้เป็นวิธีมาตรฐานซึ่งใช้กันแพร่หลายต่อมาในประเทศไทยสำหรับวัดระดับฮอร์โมนในเลือด และทางสาขาวิชาฯ ได้เริ่มทำการตรวจวัดฮอร์โมนชนิดต่างๆ เป็นต้นมาตั้งแต่ พ.ศ. 2520
+                <br>-ได้เริ่มนำเอาการวัดระดับ glycosylated hemoglobin หรือฮีโมโกลบิน A1c เข้ามาใช้ในประเทศไทยเป็นครั้งแรกที่โรงพยาบาลศิริราช ซึ่งวิธีการวัด HbA1c นี้เป็นวิธีการประเมินการควบคุมโรคเบาหวานซึ่งใช้เป็นมาตรฐานทั่วโลกในปัจจุบัน โดยเริ่มการวัดและพัฒนาวิธีการวัดระดับ HbA1c เรื่อยมาตั้งแต่ปี พ.ศ. 2524 (ตีพิมพ์ใน Vichayanrat A, Ploybutr S, Nitiyanant W, Vannasaeng S, Tandhanand S. J. Asean Fed Endocrine Soc 1982;2:75-78 และ J Med Ass Thailand 1984;67:216-223)
+                <br>-สาขาวิชาต่อมไร้ท่อนำโดย ศ.พญ.วรรณี นิธิยานันท์ เป็นผู้วิจัยหลักของโครงการวิจัย multicenter study ศึกษา vascular complications ในผู้ป่วยเบาหวานชนิดที่ 2 ในประเทศไทย ซึ่งเป็นงานวิจัยชนิด collaborative multicenter ของโรคเบาหวานเป็นครั้งแรกในประเทศไทย โดยรับทุนจาก National Epidemiology Board ของประเทศไทย (ผลงานตีพิมพ์ใน Diabetes Research and Clinical Practice 1994;25:61-69)
+                <br>-งานวิจัย เรื่อง “Risk factor of diabetic foot ulcer” โดยสามารถสร้าง model ในการวิเคราะห์ปัจจัย Foot care behavior ในผู้ป่วยไทย (ตีพิมพ์ใน Sriussadaporn S, Ploybutr S, Nitiyanant W, Vannasaeng S, Vichayanrat A. ใน J Med Ass Thailand 1998;29:29-36) ซึ่งได้รับการอ้างอิงหลายครั้ง และได้มีผู้นำไปใช้ประเมินผู้ป่วยเบาหวานที่มีโอกาสเสี่ยงต่อการเกิดแผลที่เท้าได้อย่างถูกต้องแม่นยำ และผู้อ้างอิงคนหนึ่งได้ขออนุญาตใช้ชื่อ model นี้ว่า “Siriraj Foot-Care Score” (JA Neil. ใน Ostomy/wound Management 2002;48:50-6) ซึ่งนับว่าสร้างชื่อเสียงให้แก่สาขาวิชาต่อมไร้ท่อฯ และภาควิชาอายุรศาสตร์ ตลอดจนคณะแพทยศาสตร์ศิริราชพยาบาล
+                <br>-สาขาวิชาฯ (ศ.นพ.สาธิต วรรณแสง และ อ.นพ.ณัฐเชษฐ์ เปล่งวิทยา) ได้ร่วมกับภาควิชาอิมมูโนวิทยา (ศ.พญ.นภาธร บานชื่น) และสถานส่งเสริมการวิจัย (ศ.ดร.เพทาย เย็นจิตโสมนัส) ก่อตั้งเครือข่ายการวิจัยโรคเบาหวานของศิริราช (Siriraj Research Network on Diabetes Mellitus) และร่วมมือทำวิจัยด้านอณูพันธุศาสตร์ของโรคเบาหวาน โดยเฉพาะอย่างยิ่ง MODY และโรคเบาหวานชนิดที่ 2 และเครือข่ายนี้ยังมีส่วนร่วมในการผลิตบัณฑิตปริญญาโท ซึ่งทำวิทยานิพนธ์ในเรื่อง immunology และ genetics ของโรคเบาหวาน และนอกจากนี้ยังได้ร่วมมือกับสถาบันต่างประเทศในการวิจัยและฝึกอบรมบุคลากรเพื่อการวิจัยด้านพันธุกรรมของโรคเบาหวาน ซึ่งคณะฯ โดยคณบดี (ศ.นพ.ปิยะสกล สกลสัตยาทร) ในนามของ Siriraj Research Network on Diabetes Mellitus ได้มีการลงนามร่วมใน Memorandum of Understanding Relating to Scientific Cooperation กับ Joslin Diabetes Center ในสังกัดมหาวิทยาลัยฮาร์วาร์ด ไปเมื่อวันที่ 6 มีนาคม พ.ศ. 2549
+                <br>-อ.นพ.ณัฐเชษฐ์ เปล่งวิทยา ร่วมกับเครือข่ายวิจัยเบาหวานของศิริราชทำการศึกษา MODY gene ในผู้ป่วยเบาหวาน พ.ศ. 2543 โดยอาศัยเทคนิคทางอณูพันธุศาสตร์เป็นครั้งแรกในประเทศไทย
+                <br>-สาขาวิชาได้ทำการตรวจวัดระดับ 1,25 (OH)2 vitamin D ในปี พ.ศ. 2540 เป็นครั้งแรกในประเทศไทย</p>
+            <div id="body" class="page-header">
+                <h3>ติดต่อ / สอบถาม</h3>
+            </div>
+            <p> สำนักงาน: ตึกอัษฎางค์ชั้น 8 
+                <br>โทรศัพท์: 02-4197797-99 โทรสาร: 02-4197792
+            </p>
+            <div id="header" class="page-header">
+                <h3>อาจารย์ประจำสาขาวิชา</h3>
+            </div>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/d1.jpg" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">รศ.นพ. ณัฐเชษฐ์ เปล่งวิทยา 
+                            <br>หัวหน้าสาขา </h4>
+                    <li>หนังสืออนุมัติแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์ ต่อมไร้ท่อและเมตะบอลิสม</li>
+                    <li>หนังสืออนุมัติแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาเวชศาสตร์ครอบครัว</li>
+                    <li>Certificate in postdocteral research fellow training</li>
+
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/d2.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">ศ.นพ. สุทิน ศรีอัษฎาพร 
+                            <br>อาจารย์ </h4>
+                    <li>หนังสืออนุมัติแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์ ต่อมไร้ท่อและเมตะบอลิสม</li>
+                    <li>หนังสืออนุมัติแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาเวชศาสตร์ครอบครัว</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์ ต่อมไร้ท่อและเมตะบอลิสม</li>	
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/d3.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">รศ.พญ. อภิรดี ศรีวิจิตรกมล 
+                            <br>อาจารย์ </h4>
+                    <li>Certificate in postdocteral research fellow training</li>
+                    <li>หนังสืออนุมัติแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์ ต่อมไร้ท่อและเมตะบอลิสม</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์ ต่อมไร้ท่อและเมตะบอลิสม</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/d4.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">    
+                    <h4 class="media-heading">รศ.พญ. ระวีวรรณ เลิศวัฒนารักษ์ 
+                            <br>อาจารย์ </h4>
+                    <li>Certificate in postdocteral research fellow training</li>
+                    <li>หนังสือวุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคต่อมไร้ท่อและเมตะบอลิสม</li>
+                    <li>หนังสืออนุมัติบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคต่อมไร้ท่อและเมตะบอลิสม</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/d5.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">รศ.พญ. นันทกร ทองแตง 
+                            <br>อาจารย์ </h4>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์ ต่อมไร้ท่อและเมตะบอลิสม</li>
+                    <li>ประกาศนียบัณฑิตทางวิทยาศาสตร์การแพทย์คลินิก สาขาเวชศาสตร์ครอบครัว</li>
+                    <li>แพทยศาสตรบัณฑิต เกียรตินิยมอันดับ 1</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/d6.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">อ.พญ. ปวีณา ชุณหโรจน์ฤทธิ์ 
+                            <br>อาจารย์ </h4>
+                    <li>หนังสือรับรองวุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศสตร์ ต่อมไร้ท่อและเมตะบอลิสม</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                    <li>ประกาศนียบัตรบัณฑิตทางวิทยาศาสตร์การแพทย์คลินิก สาขาอายุรศาสตร์</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/d7.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">ผศ.นพ. ธาดา คุณาวิศรุต 
+                            <br>อาจารย์ </h4>
+                    <li>ฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์ ต่อมไร้ท่อและเมตะบอลิสม</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                    <li>แพทยศาสตรบัณฑิต เกียรตินิยมอันดับ 1</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/d8.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">อ.นพ. ทวีศักดิ์ วรรณชาลี 
+                            <br>อาจารย์ </h4>           
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม อนุสาขาอายุรศาสตร์ต่อมไร้ท่อและเมตะบอลิสม</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                    <li>แพทยศาสตรบัณฑิต เกียรตินิยมอันดับ 2</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/d9.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">อ.พญ. สิรินาถ สิรินทร์วราวงศ์ 
+                            <br>อาจารย์ </h4>
+                    <li>แพทยศาสตรบัณฑิต (เกียรตินิยมอันดับ 1)</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                    <li>The American Board of Internal Medicine Internal Medicine</li>
+                </div>
+            </article>
+            <br>
+        </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-socials">
+                <a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" data-toggle="tooltip" title="Instagram"><i class="fa fa-instagram"></i></a>
+                <a href="#" data-toggle="tooltip" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+            </div>			
+            <div class="footer-bottom">
+                <i>ภาควิชาอายุรศาสตร์ รพ.ศิริราช ตึกอัษฎางค์ ชั้น4 แขวงศิริราช เขตบางกอกน้อย กรุงเทพมหานคร 10700 โทร.02-419-7767-69</i>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

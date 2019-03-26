@@ -39,7 +39,7 @@ if(isset($_SESSION['user_name'])){
                                     <div class="col-md-6">
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" />
+                                                <input type="checkbox"/>
                                                 Remember Me
                                             </label>
                                         </div>
@@ -54,7 +54,6 @@ if(isset($_SESSION['user_name'])){
                 </div>
             </div>
         </div>
-
 
         <script type="text/javascript">
             $(document).ready(function () {

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ภาควิชาอายุรศาสตร์ คณะแพทยศาสตร์ศิริราชพยาบาล</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    #header {
+        border-bottom: 3px solid gold;
+    }
+	.row {padding-top :20px;}
+    .affix{
+		top: 0;
+		width: 100%;
+		z-index: 9999 !important;
+	}
+	.affix + .container-fluid{
+		padding-top: 70px;
+	}
+	body{
+		background-color: #ffffff;
+	}
+	footer{
+		background-color: #104697;
+	}
+	.navbar {
+		background-color : #104697;
+	}
+	.navbar-inverse .navbar-nav .nav-link {
+    color: #ffffff;
+	}
+	.navbar-inverse .nav-item:hover .nav-link {
+    color: #ffffff;
+	}
+	.navbar-inverse .dropdown-menu {
+    background-color: #3180F5;
+	}
+	.navbar-inverse .dropdown-item {
+    color: #ffffff;
+	}
+	.navbar-inverse .dropdown-item:hover,
+	.navbar-inverse .dropdown-item:focus {
+    color: #ffffff;
+    background-color: rgba(255,255,255,.5);
+	}
+</style>
+<body>
+	<div class="container-fluid " id="headerimages" style="background-color:#ffffff">
+		<img src="images/Si_Th_H_Color.png" style="width: 600px">
+	</div>
+	<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="250">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="index.html" ><i class="fa fa-home"> หน้าหลัก</a></li></i>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown">ข้อมูลองค์กร<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="Information.html">ประวัติภาควิชา</a></li>
+							<li><a class="dropdown-item" href="Information.html#inform">วิสัยทัศน์/พันธกิจ</a></li>
+							<li><a class="dropdown-item" href="structure.html">โครงสร้างการบริหารภาค</a></li>
+							<li><a class="dropdown-item" href="department.html">รายนามหัวหน้าภาค</a></li>
+							<li><a class="dropdown-item" href="Com.html">กรรมการบริหารภาค</a></li>
+							<li><a class="dropdown-item" href="Branch.html">รายระเอียดสาขาวิชา</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown">บุคลากร<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="personnel.html">บุคลากร</a></li>
+								<li><a class="dropdown-item" href="#">เกียรติยศอายุรศาสตร์</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown">ข่าวสาร<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="news.html">ข่าวประชาสัมพันธ์</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวกิจกรรม</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวการศึกษาก่อนปริญญา</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวการศึกษาหลังปริญญา</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="other.html">อื่นๆ</a></li>
+						<li class="nav-item"><a class="nav-link" href="Contact.html">ติดต่อ/สอบถาม</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user"></i> เข้าสู่ระบบ<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<div class="container">
+									<form action="/action_page.php">
+										<div class="form-group row">
+											<div class="col-xs-2">
+												<label for="user">Username:</label>
+												<input type="user" class="form-control" id="user" placeholder="Enter user" name="user" size="20" maxlength="20">
+											</div>
+											<div class="col-xs-3">
+												<label for="pwd">Password:</label>
+												<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" size="20" maxlength="20">
+											</div>
+											<button type="submit" class="btn btn-default">Submit</button>
+										</div>
+									</form>
+								</div>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+        <div class="container">
+            <div id="header" class="page-header">
+                <h2>สาขาวิชาเคมีบำบัด</h2>
+            </div>
+            <div id="body" class="page-header">
+                <h3>ข้อมูลสาขาวิชา</h3>
+            </div>
+            <p> สาขาวิชาเคมีบำบัด เริ่มก่อตั้งใน พ.ศ. 2529 ให้บริการตรวจรักษาผู้ป่วยโรคมะเร็งด้วยยาเคมีบำบัด (chemotherapy) 
+                และยังสอนนักศึกษาแพทย์เพื่อให้มีความรู้ความเข้าใจเกี่ยวกับโรคมะเร็งรวมทั้งมีเจตคติที่ดีต่อการรักษาโรคมะเร็ง 
+                นอกจากนี้สาขาวิชาเคมีบำบัดยังมีส่วนเกี่ยวข้องในการผลิตแพทย์ผู้เชี่ยวชาญสาขาอายุรศาสตร์มะเร็งวิทยา 
+                โดยเริ่มเปิดเป็นสถาบันฝึกอบรมตั้งแต่ปี พ.ศ. 2530 จนถึงปัจจุบัน
+            </p>
+            <div id="body" class="page-header">
+                <h3>งานบริการของสาขาวิชา</h3>
+            </div>
+            <p>คลินิกเฉพาะทาง (onco clinic) ทุกวันจันทร์ ณ ห้องตรวจอายุรศาสตร์ 208 ตั้งแต่เวลา 9.00–16.00 น.</p>
+            <div id="body" class="page-header">
+                <h3>ติดต่อ / สอบถาม</h3>
+            </div>
+            <p>สำนักงาน: อาคารเฉลิมพระเกียรติ 80 พรรษา 
+                <br>โทรศัพท์: 0-2419-4489, 4494
+            </p>
+            <div id="body" class="page-header">
+                <h3>เกียรยศและความภาคภูมิ</h3>
+            </div>
+            <p> อ.พญ.ศุทธินี อิทธิเมฆินทร์ได้รับพระราชทานทุนมูลนิธิอานันทมหิดล 
+                แผนกแพทยศาสตร์ลาศึกษา Research fellowship of breast cancer stem cells 
+                ณ University of Michigan Comprehensive Cancer Center, Ann Arbor, Michigan, ประเทศสหรัฐอเมริกา</p>
+            <div id="header" class="page-header">
+                <h3>อาจารย์ประจำสาขาวิชา</h3>
+            </div>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/c1.jpg" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">ผศ.พญ. จารุวรรณ เอกวัลลภ <br>หัวหน้าสาขา </h4>
+                    <li>อนุมัติบัตรแสดงความรู้ความชำนาญในการประกอลวิชาชีพเวชกรรม สาขาอายุรศาสตร์มะเร็งวิทยา</li>
+                    <li>Diplomate, American Boad of Internal Medicine, Subspecialty Board of Medical Oncology</li>
+                    <li>ประกาศนียบัตรบัณฑิตทางวิทยาศาสตร์การแพทย์คลินิก</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/c2.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">อ.นพ. นพดล โสภารัตนาไพศาล <br>อาจารย์ </h4>
+                    <li>อนุมัติบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาเวชศาสตร์ครอบครัว</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์มะเร็งวิทยา</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/c3.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">รศ.พญ. ศุทธินี อิทธิเมฆินทร์ <br>อาจารย์ </h4>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์มะเร็งวิทยา</li>	
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                    <li>ประกาศนียบัตรบัณฑิตทางวิทยาศาสตร์การแพทย์คลินิก สาขาอายุรศาสตร์</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/c4.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">อ.พญ. ศิริโสภา เตชะวัฒนวรรณา <br>อาจารย์</h4>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์มะเร็งวิทยา</li>
+                    <li>แพทยศาสตรบัณฑิต</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/c5.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">	ผศ.พญ กฤติยา กอไพศาล <br>อาจารย์ </h4>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์มะเร็งวิทยา</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                    <li>ประกาศนียบัตรทางวิทยาศาสตร์การแพทย์คลินิก สาขาวิชาอายุรศาสตร์</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/c6.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">	อ.พญ. จอมจิตต์ จันทรัศมี <br>อาจารย์ </h4>
+                    <li>วุฒิบัตร แสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์มะเร็งวิทยา</li>
+                    <li>วุฒิบัตร แสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                    <li>ประกาศนียบัตรทางวิทยาศาสตร์การแพทย์คลินิก สาขาวิชาอายุรศาสตร์</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/c7.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">อ.นพ. ปองวุฒิ ด่านชัยวิจตร <br>อาจารย์ </h4>
+                    <li>American Board of Medical Hematology and Oncology	
+                    <li>American Board of Internal Medicine	
+                    <li>ประกาศนียบัตรบัณฑิตทางวิทยาศาสตร์การแพทย์คลินิก
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/c8.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">อ.นพ. ลักษมันต์ ธรรมลิขิตกุล <br>อาจารย์ </h4>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์มะเร็งวิทยา</li>
+                    <li>ประกาศนียบัตรบัณฑิตชั้นสูง (วิทยาศาสตร์การแพทย์คลินิก)</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์มะเร็งวิทยา</li>
+                </div>
+            </article>
+            <br>
+        </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-socials">
+                <a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" data-toggle="tooltip" title="Instagram"><i class="fa fa-instagram"></i></a>
+                <a href="#" data-toggle="tooltip" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+            </div>			
+            <div class="footer-bottom">
+                <i>ภาควิชาอายุรศาสตร์ รพ.ศิริราช ตึกอัษฎางค์ ชั้น4 แขวงศิริราช เขตบางกอกน้อย กรุงเทพมหานคร 10700 โทร.02-419-7767-69</i>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ภาควิชาอายุรศาสตร์ คณะแพทยศาสตร์ศิริราชพยาบาล</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    #header {
+        border-bottom: 3px solid gold;
+    }
+	.row {padding-top :20px;}
+    .affix{
+		top: 0;
+		width: 100%;
+		z-index: 9999 !important;
+	}
+	.affix + .container-fluid{
+		padding-top: 70px;
+	}
+	body{
+		background-color: #ffffff;
+	}
+	footer{
+		background-color: #104697;
+	}
+	.navbar {
+		background-color : #104697;
+	}
+	.navbar-inverse .navbar-nav .nav-link {
+    color: #ffffff;
+	}
+	.navbar-inverse .nav-item:hover .nav-link {
+    color: #ffffff;
+	}
+	.navbar-inverse .dropdown-menu {
+    background-color: #3180F5;
+	}
+	.navbar-inverse .dropdown-item {
+    color: #ffffff;
+	}
+	.navbar-inverse .dropdown-item:hover,
+	.navbar-inverse .dropdown-item:focus {
+    color: #ffffff;
+    background-color: rgba(255,255,255,.5);
+	}
+</style>
+<body>
+	<div class="container-fluid " id="headerimages" style="background-color:#ffffff">
+		<img src="images/Si_Th_H_Color.png" style="width: 600px">
+	</div>
+	<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="250">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="index.html" ><i class="fa fa-home"> หน้าหลัก</a></li></i>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown">ข้อมูลองค์กร<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="Information.html">ประวัติภาควิชา</a></li>
+							<li><a class="dropdown-item" href="Information.html#inform">วิสัยทัศน์/พันธกิจ</a></li>
+							<li><a class="dropdown-item" href="structure.html">โครงสร้างการบริหารภาค</a></li>
+							<li><a class="dropdown-item" href="department.html">รายนามหัวหน้าภาค</a></li>
+							<li><a class="dropdown-item" href="Com.html">กรรมการบริหารภาค</a></li>
+							<li><a class="dropdown-item" href="Branch.html">รายระเอียดสาขาวิชา</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown">บุคลากร<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="personnel.html">บุคลากร</a></li>
+								<li><a class="dropdown-item" href="#">เกียรติยศอายุรศาสตร์</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown">ข่าวสาร<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="news.html">ข่าวประชาสัมพันธ์</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวกิจกรรม</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวการศึกษาก่อนปริญญา</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวการศึกษาหลังปริญญา</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="other.html">อื่นๆ</a></li>
+						<li class="nav-item"><a class="nav-link" href="Contact.html">ติดต่อ/สอบถาม</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user"></i> เข้าสู่ระบบ<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<div class="container">
+									<form action="/action_page.php">
+										<div class="form-group row">
+											<div class="col-xs-2">
+												<label for="user">Username:</label>
+												<input type="user" class="form-control" id="user" placeholder="Enter user" name="user" size="20" maxlength="20">
+											</div>
+											<div class="col-xs-3">
+												<label for="pwd">Password:</label>
+												<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" size="20" maxlength="20">
+											</div>
+											<button type="submit" class="btn btn-default">Submit</button>
+										</div>
+									</form>
+								</div>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+        <div class="container">
+            <div id="header" class="page-header">
+                <h2>สาขาวิชาวักกะวิทยา</h2>
+            </div>
+            <div id="body" class="page-header">
+                <h3>ประวัติความเป็นมา</h3>
+            </div>
+            <p> ปรมาจารย์ผู้ให้กำเนิดวิชาโรคไตยุคปัจจุบันที่โรงพยาบาลศิริราช ได้แก่ ศ.นพ.รจิต บุรี ผู้ก่อตั้งสาขาวิชาวักกะวิทยา ภาควิชาอายุรศาสตร์ เมื่อปี พ.ศ. 2503 
+                หลังจากที่ ศ.นพ.รจิต บุรี ได้รับทุนจาก National Institutes of Health (NIH) เพื่อไปศึกษาด้านการฟอกเลือดด้วยเครื่องไตเทียมในต่างประเทศ และได้นำวิทยาการ และเทคโนโลยีในการตรวจวินิจฉัยโรคไต fluid และ electrolytes 
+                ยุคใหม่มาใช้ ศ.นพ.รจิต บุรี จึงเป็นอาจารย์และเป็นหัวหน้าสาขาวิชาวักกะวิทยาท่านแรก ต่อมา ศ.นพ.รจิต บุรี ได้ลาออกเมื่อ พ.ศ. 2509 เพื่อไปร่วมก่อตั้งคณะแพทยศาสตร์โรงพยาบาลรามาธิบดี 
+                <br>
+                <br>อาจารย์ท่านที่สอง คือ นพ.สง่า นิลวรางกูร ได้รับการบรรจุเป็นอาจารย์เมื่อ 1 ตุลาคม พ.ศ. 2504 ได้รับทุน British Council ในปี พ.ศ. 2507 เพื่อศึกษาเป็น research fellow ที่ ประเทศอังกฤษ อาจารย์เป็นหัวหน้าสาขาวิชาฯ ระหว่างปี พ.ศ. 2509-2539
+                <br>
+                <br>พ.ศ. 2507 พญ.นพรัตน์ ตู้จินดา (เปรมัษเฐียร ในปัจจุบัน) ได้รับการบรรจุเป็นอาจารย์ของสาขาวิชาฯ และมีส่วนสำคัญในการจัดตั้งคลินิกโรคไต (Renal Clinic) อาจารย์ได้ไปศึกษาต่อ ณ ประเทศสหรัฐอเมริกาเป็นเวลา 3 ปี เมื่อกลับมาทำงานได้ปีเศษ จึงย้ายไปภาควิชาอายุรศาสตร์ คณะแพทยศาสตร์ มหาวิทยาลัยเชียงใหม่
+                <br>พ.ศ. 2509 นพ.พิศิษฐ์ จิรวงศ์ ได้รับการบรรจุเป็นอาจารย์ของสาขาวิชาฯ และได้รับทุน Columbo Plan ศึกษาต่อปริญญาเอก และดูงานด้าน renal biopsy และ renal histopathology ณ ประเทศออสเตรเลีย ระหว่างปี พ.ศ. 2510-2514 
+                <br>พ.ศ. 2515 พญ.สุมาลี นิมมานนิตย์ ได้รับการบรรจุเป็นอาจารย์ของสาขาวิชาฯ หลังจากจบการฝึกอบรมแพทย์ประจำบ้านสาขาวิชาอายุรศาสตร์ และ fellow สาขาวิชาอายุรศาสตร์โรคไต และทำงานในหน่วยโรคไตที่ประเทศสหรัฐอเมริกา ดำรงตำแหน่งหัวหน้าสาขาวิชาวักกะวิทยาระหว่างปี พ.ศ. 2539-2540
+                <br>พ.ศ. 2517 พญ.ลีนา สิ่งชูวงศ์ (ศ.พญ.ธัญญารัตน์ ธีรพรเลิศรัฐ ในปัจจุบัน) ได้รับการบรรจุเป็นอาจารย์ของสาขาวิชาฯ หลังจบการฝึกอบรมสาขาอายุรศาสตร์ที่ภาควิชาอายุรศาสตร์ คณะแพทยศาสตร์ศิริราชพยาบาล และต่อมาได้รับทุน DAAD เพื่อศึกษาต่อปริญญา Dr. Med. ณ ประเทศสหพันธ์สาธารณรัฐเยอรมนี ระหว่าง พ.ศ. 2518-2521 ดำรงตำแหน่งหัวหน้าสาขาวิชาวักกะวิทยาระหว่างปี พ.ศ. 2540-2549
+                <br>พ.ศ. 2519 นพ.สุพัฒน์ วาณิชย์การ ได้รับการบรรจุเป็นอาจารย์ของสาขาวิชาฯ หลังจบการฝึกอบรมเป็นแพทย์ประจำบ้านสาขาวิชาอายุรศาสตร์ และ fellow สาขาวิชาอายุรศาสตร์โรคไตจากประเทศสหรัฐอเมริกา 
+                <br>พ.ศ. 2523 นพ.ปรีดา มาลาสิทธิ์ ได้รับการบรรจุเป็นอาจารย์ของสาขาวิชาฯ อาจารย์ได้รับทุนอานันทมหิดล เพื่อฝึกอบรมและศึกษาต่อ ณ ประเทศอังกฤษ ได้รับ MRCP และมีความสนใจด้าน immunology 
+                <br>พ.ศ. 2530 นพ.สมเกียรติ วสุวัฏฏกุล ได้รับการบรรจุเป็นพนักงานมหาวิทยาลัย ตำแหน่งอาจารย์ ซึ่งเป็นคนแรกของมหาวิทยาลัย ต่อมา นพ.สมเกียรติ วสุวัฏฏกุล ได้รับทุนจากคณะฯ ไปศึกษาด้าน fluid และ electrolytes ณ ประเทศแคนาดา ระหว่าง พ.ศ. 2532-2535 และได้รับการบรรจุเป็นข้าราชการ พ.ศ. 2536 ดำรงตำแหน่งหัวหน้าสาขาวิชาวักกะวิทยาระหว่างปี พ.ศ. 2549-2555
+                <br>พ.ศ. 2531 สาขาวิชาฯ ได้รับ นพ.เกรียงศักดิ์ วารีแสงทิพย์ เป็นแพทย์เฟลโลว์โดยใช้เงินรายได้ของคณะฯ และได้รับการพิจารณาบรรจุให้เป็นพนักงานมหาวิทยาลัย ตำแหน่งอาจารย์ พ.ศ. 2532 และได้รับการบรรจุเป็นข้าราชการ พ.ศ. 2538 ต่อมา นพ.เกรียงศักดิ์ วารีแสงทิพย์ ได้รับทุนของคณะฯ ไปศึกษาด้าน hemodialysis และการปลูกถ่ายไต และศึกษาต่อปริญญาเอกทางด้าน renal medicine ณ ประเทศอังกฤษ ระหว่างปี พ.ศ. 2536-2540 ปัจจุบันดำรงตำแหน่งหัวหน้าสาขาวิชาฯ ตั้งแต่ปี พ.ศ. 2555 ถึงปัจจุบัน
+                <br>พ.ศ. 2533 นพ.ชัยรัตน์ ฉายากุล ได้รับการบรรจุเป็นพนักงานมหาวิทยาลัย ตำแหน่งอาจารย์ และได้รับการบรรจุเป็นข้าราชการ พ.ศ. 2538 ได้รับทุนสนับสนุนจากคณะฯ เพื่อฝึกอบรมด้าน renal tubular acidosis และโรคใหลตาย ที่ประเทศญี่ปุ่น ระหว่างปี พ.ศ. 2537-2538 และด้าน molecular genetics และ physiology ของ membrane transport protein ณ ประเทศสหรัฐอเมริกา ระหว่างปี พ.ศ. 2538-2542
+                <br>พ.ศ. 2537 นพ.สุชาย ศรีทิพยวรรณ ได้รับการบรรจุเป็นพนักงานมหาวิทยาลัย ตำแหน่งอาจารย์ และได้รับการบรรจุเป็นข้าราชการเมื่อ พ.ศ. 2539 และสำเร็จการศึกษาระดับปริญญาเอกที่มหาวิทยาลัยมหิดล พ.ศ. 2552
+                <br>พ.ศ. 2540 นพ.ทวี ชาญชัยรุจิรา ได้รับการบรรจุเป็นอาจารย์ของสาขาวิชาฯ หลังจบการฝึกอบรมสาขาอายุรศาสตร์โรคไตที่คณะแพทยศาสตร์ศิริราชพยาบาล และได้รับทุนจากคณะฯ ไปฝึกอบรมด้าน hemodialysis ณ ประเทศสหรัฐอเมริกา ระหว่างปี พ.ศ. 2542-2544
+                <br>พ.ศ. 2541 นพ.อรรถพงศ์ วงศ์วิวัฒน์ ได้รับการบรรจุเป็นอาจารย์ของสาขาวิชาฯ หลังจบการฝึกอบรมสาขาอายุรศาสตร์โรคไตที่คณะแพทยศาสตร์ศิริราชพยาบาล และได้รับทุนจากคณะฯ ไปฝึกอบรมต่อด้านการปลูกถ่ายไต ณ ประเทศแคนาดา ระหว่างปี พ.ศ. 2545-2547
+                <br>พ.ศ. 2546 พญ.รัตนา ชวนะสุนทรพจน์ ได้รับการบรรจุเป็นอาจารย์ของสาขาวิชาฯ หลังจบการฝึกอบรมสาขาอายุรศาสตร์โรคไตที่คณะแพทยศาสตร์ศิริราชพยาบาล และได้รับทุนจากคณะฯ เพื่อฝึกอบรมต่อเกี่ยวกับพยาธิกำเนิดในโรคของโกลเมอรูลัส ณ ประเทศอังกฤษ ระหว่างปี พ.ศ. 2549-2552
+                <br>พ.ศ. 2547 พญ.นลินี เปรมัษเฐียร ซึ่งได้รับ Diplomate American Board of Internal Medicine, American Board of Nephrology และ Certificate in Transplant Medicine จากประเทศสหรัฐอเมริกา และได้รับการบรรจุเป็นอาจารย์ของสาขาวิชาฯ
+                <br>พ.ศ. 2548 พญ.ไกรวิพร เกียรติสุนทร ได้รับการบรรจุเป็นอาจารย์ของสาขาวิชาฯ หลังจบการฝึกอบรมสาขาอายุรศาสตร์โรคไตที่คณะแพทยศาสตร์ศิริราชพยาบาล และได้รับทุนคณะฯ เพื่อฝึกอบรมต่อเกี่ยวกับ Renal osteodystrophy and vascular calcification in chronic kidney disease ณ ประเทศสหรัฐอเมริกา ระหว่างปี พ.ศ. 2552-2554
+                <br>พ.ศ. 2553 นพ.สุกิจ รักษาสุข ได้รับการบรรจุเป็นพนักงานมหาวิทยาลัย ตำแหน่งแพทย์
+                <br>พ.ศ. 2553 นพ.นัฐสิทธิ์ ลาภปริสุทธิ ได้รับการบรรจุเป็นอาจารย์ของสาขาวิชาฯ หลังจบการฝึกอบรมสาขาอายุรศาสตร์โรคไตที่คณะแพทยศาสตร์ศิริราชพยาบาล
+                <br>พ.ศ. 2555 พญ.ทัศน์พรรณ ศรีทองกุล ได้รับการบรรจุเป็นพนักงานมหาวิทยาลัย ตำแหน่งแพทย์ หลังจบการฝึกอบรมสาขาอายุรศาสตร์โรคไตที่คณะแพทยศาสตร์ศิริราชพยาบาล
+                <br>พ.ศ. 2556 พญ.ปีณิดา สกุลรัตนศักดิ์ ได้รับการบรรจุเป็นพนักงานมหาวิทยาลัย ตำแหน่งแพทย์ หลังจบการฝึกอบรมสาขาอายุรศาสตร์โรคไตที่คณะแพทยศาสตร์ศิริราชพยาบาล
+                <br>
+                <br>หัวหน้าสาขาวิชา จากอดีตถึงปัจจุบัน 
+                <li>พ.ศ. 2503-2509	ศาสตราจารย์นายแพทย์รจิต บุรี</li>
+                <li>พ.ศ. 2509-2539	ศาสตราจารย์นายแพทย์สง่า นิลวรางกูร</li>
+                <li>พ.ศ. 2539-2540	ศาสตราจารย์แพทย์หญิงสุมาลี นิมมานนิตย์</li>
+                <li>พ.ศ. 2540-2549	ศาสตราจารย์แพทย์หญิงลีนา องอาจยุทธ (ธัญญารัตน์ ธีรพรเลิศรัฐ)</li>
+                <li>พ.ศ. 2549-2555	อาจารย์นายแพทย์สมเกียรติ วสุวัฏฏกุล</li>
+                <li>พ.ศ. 2555-ปัจจุบัน	รองศาสตราจารย์นายแพทย์เกรียงศักดิ์ วารีแสงทิพย์</li>
+            </p>
+            <div id="body" class="page-header">
+                <h3>ปีที่ก่อตั้ง</h3>
+            </div>
+            <p> พ.ศ.2503
+            </p>
+            <div id="body" class="page-header">
+                <h3>ติดต่อ / สอบถาม</h3>
+            </div>
+            <p> สำนักงาน:
+                <br>โทรศัพท: 0-2419-8383
+            </p>
+            <div id="header" class="page-header">
+                <h3>อาจารย์ประจำสาขาวิชา</h3>
+            </div>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/m1.jpg" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">ศ.ดร.นพ. เกรียงศักดิ์ วารีแสงทิพย์ <br>หัวหน้าสาขา</h4>
+                    <li>อนุมัติแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาเวชศาสตร์ครอบครัว</li>
+                    <li>Ph.D.</li>
+                    <li>Certificate of the Registrar in Nephrology and General Medicine</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/m2.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">อ.นพ. สมเกียรติ วสุวัฏฏกุล <br>อาจารย์</h4>
+                    <li>อนุมัติบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาเวชศาสตร์ครอบครัว</li>
+                    <li>Research Fellow in Fluid and Electrolytes</li>
+                    <li>อนุมัติบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคไต</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/m3.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">ศ.นพ. ชัยรัตน์ ฉายากุล <br>อาจารย์</h4>
+                    <li>อนุมัติบัติแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาเวชศาสตร์ครอบครัว</li>
+                    <li>Certificate, Fellowship in Medicine (Nephrology)</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคไต</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/m4.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">รศ.นพ. อรรถพงศ์ วงศ์วิวัฒน์ <br>อาจารย์</h4>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคไต</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์ทั่วไป</li>
+                    <li>ประกาศนียบัตรวิทยาศาสตร์การแพทย์คลินิก</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/m5.jpg" class="media-object" style="width:100px">
+                </div>
+                    <div class="post-body">    
+                    <h4 class="media-heading">อ.นพ. สุชาย ศรีทิพยวรรณ <br>อาจารย์</h4>
+                    <li>อนุมัติบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาเวชศาสตร์ครอบครัว</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคไต</li>
+                    <li>อนุมัติบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์ทั่วไป</li>	
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/m6.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">รศ.นพ. ทวี ชาญชัยรุจิรา <br>อาจารย์</h4>
+                    <li>Certificate of fellowship in nephrology research</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคไต</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/m7.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">ผศ.พญ. รัตนา ชวนะสุนทรพจน์ <br>อาจารย์</h4>
+                    <li>อนุมัติบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาเวชศาสตร์ครอบครัว</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชีพเวชกรรม สาขาอายุรศาสตร์โรคไต</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาตร์ทั่วไป</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/m8.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">ผศ.พญ. ไกรวิพร เกียรติสุนทร <br>อาจารย์</h4>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคไต</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                    <li>ประกาศนียบัตรบัณฑิตทางวิทยาศาสตร์การแพทย์คลินิก สาขาอายุรศาสตร์</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/m9.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">อ.พญ. นลินี เปรมัษเฐียร <br>อาจารย์พิเศษ </h4>
+                    <li>อนุมัติบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคไต</li>
+                    <li>อนุมัติบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม อายุรศาสตร์ทั่วไป</li>
+                    <li>Certificate in Transplant Medicine</li>
+                    
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/m10.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">ผศ.นพ. นัฐสิทธิ์ ลาภปริสุทธิ <br>อาจารย์พิเศษ </h4>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคไต</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                    <li>แพทยศาสตร์บัณฑิต (เกียรตินิยมอันดับ 1)</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/m11.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">อ.พญ. ปีณิดา สกุลรัตนศักดิ์ <br>อาจารย์พิเศษ </h4>
+                    <li>แพทยศาสตรบัณฑิต (เกียรตินิยมอันดับ 2)</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคไต</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/m12.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">อ.พญ. ทัศน์พรรณ ศรีทองกุล <br>อาจารย์พิเศษ </h4>
+                    <li>แพทยศาสตรบัณฑิต</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคไต</li>	
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/m13.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">อ.นพ. สุกิจ รักษาสุข <br>อาจารย์พิเศษ </h4>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคไต</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                    <li>แพทยศาสตร์บัณฑิต</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/m14.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">อ.พญ. กรชนก วารีแสงทิพย์ <br>อาจารย์พิเศษ </h4>
+                </div>
+            </article>
+            <br>
+        </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-socials">
+                <a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" data-toggle="tooltip" title="Instagram"><i class="fa fa-instagram"></i></a>
+                <a href="#" data-toggle="tooltip" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+            </div>			
+            <div class="footer-bottom">
+                <i>ภาควิชาอายุรศาสตร์ รพ.ศิริราช ตึกอัษฎางค์ ชั้น4 แขวงศิริราช เขตบางกอกน้อย กรุงเทพมหานคร 10700 โทร.02-419-7767-69</i>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

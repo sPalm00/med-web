@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ภาควิชาอายุรศาสตร์ คณะแพทยศาสตร์ศิริราชพยาบาล</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    #header {
+        border-bottom: 3px solid gold;
+    }
+	.row {padding-top :20px;}
+    .affix{
+		top: 0;
+		width: 100%;
+		z-index: 9999 !important;
+	}
+	.affix + .container-fluid{
+		padding-top: 70px;
+	}
+	body{
+		background-color: #ffffff;
+	}
+	footer{
+		background-color: #104697;
+	}
+	.navbar {
+		background-color : #104697;
+	}
+	.navbar-inverse .navbar-nav .nav-link {
+    color: #ffffff;
+	}
+	.navbar-inverse .nav-item:hover .nav-link {
+    color: #ffffff;
+	}
+	.navbar-inverse .dropdown-menu {
+    background-color: #3180F5;
+	}
+	.navbar-inverse .dropdown-item {
+    color: #ffffff;
+	}
+	.navbar-inverse .dropdown-item:hover,
+	.navbar-inverse .dropdown-item:focus {
+    color: #ffffff;
+    background-color: rgba(255,255,255,.5);
+	}
+</style>
+<body>
+	<div class="container-fluid " id="headerimages" style="background-color:#ffffff">
+		<img src="images/Si_Th_H_Color.png" style="width: 600px">
+	</div>
+	<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="250">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="index.html" ><i class="fa fa-home"> หน้าหลัก</a></li></i>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown">ข้อมูลองค์กร<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="Information.html">ประวัติภาควิชา</a></li>
+							<li><a class="dropdown-item" href="Information.html#inform">วิสัยทัศน์/พันธกิจ</a></li>
+							<li><a class="dropdown-item" href="structure.html">โครงสร้างการบริหารภาค</a></li>
+							<li><a class="dropdown-item" href="department.html">รายนามหัวหน้าภาค</a></li>
+							<li><a class="dropdown-item" href="Com.html">กรรมการบริหารภาค</a></li>
+							<li><a class="dropdown-item" href="Branch.html">รายระเอียดสาขาวิชา</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown">บุคลากร<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="personnel.html">บุคลากร</a></li>
+								<li><a class="dropdown-item" href="#">เกียรติยศอายุรศาสตร์</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown">ข่าวสาร<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="news.html">ข่าวประชาสัมพันธ์</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวกิจกรรม</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวการศึกษาก่อนปริญญา</a></li>
+								<li><a class="dropdown-item" href="news.html">ข่าวการศึกษาหลังปริญญา</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="other.html">อื่นๆ</a></li>
+						<li class="nav-item"><a class="nav-link" href="Contact.html">ติดต่อ/สอบถาม</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user"></i> เข้าสู่ระบบ<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<div class="container">
+									<form action="/action_page.php">
+										<div class="form-group row">
+											<div class="col-xs-2">
+												<label for="user">Username:</label>
+												<input type="user" class="form-control" id="user" placeholder="Enter user" name="user" size="20" maxlength="20">
+											</div>
+											<div class="col-xs-3">
+												<label for="pwd">Password:</label>
+												<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" size="20" maxlength="20">
+											</div>
+											<button type="submit" class="btn btn-default">Submit</button>
+										</div>
+									</form>
+								</div>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+        <div class="container">
+            <div id="header" class="page-header">
+                <h2>สาขาวิชาโรคระบบทางเดินอาหาร</h2>
+            </div>
+            <div id="body" class="page-header">
+                <h3>งานการเรียนการสอน</h3>
+            </div>
+            <p> 1.ระดับนักศึกษาแพทย์ สอนวิชาโรคระบบทางเดินอาหาร ตั้งแต่อาการวิทยาการตรวจร่างกาย โรคต่างๆ บรรยายร่วมกับพยาธิวิทยาและศัลยศาสตร์ 
+                <br>2.ระดับบัณฑิตวิทยาลัย สอนโรคระบบทางเดินอาหารทั้งภาคทฤษฎี และภาคปฏิบัติ การตรวจด้วยเครื่องมือพิเศษต่างๆ แก่แพทย์ประจำบ้านที่หมุนเวียนมาและแพทย์เฟลโลว์ของสาขาวิชาฯ มีการนำเสนอผู้ป่วย Case discussion, Review journal, Medical-Surgical-X-ray conference 
+                จำนวนแพทย์ประจำบ้านเฟลโลว์และแพทย์ที่เข้าร่วมประชุมเพิ่มมากขึ้นตามลำดับ ทำให้สถานที่เดิม (ห้องสมุดของสาขาวิชา) คับแคบลง จึงได้ขยายและตกแต่งห้องใหม่ ปรับปรุงเป็นห้องประชุม “อุกฤษต์ เปล่งวาณิช” โดยมีประโยชน์ใช้สอยเป็นทั้งห้องสอนแสดง ห้องประชุมวิชาการ ธุรการ และเป็นห้องสมุดของสาขาวิชาฯ ด้วย 
+                <br>3.รับเชิญสอนปริญญาพยาบาล นักศึกษาแพทย์จากต่างมหาวิทยาลัย 
+                <br>4.แลกเปลี่ยนการดูงาน ฝึกอบรมแพทย์จากต่างประเทศ เช่น ยุโรป อินเดีย พม่า
+            </p>
+            <div id="body" class="page-header">
+                <h3>งานบริการของสาขาวิชา</h3>
+            </div>
+            <p> 1.	ตรวจผู้ป่วยทั่วไปโรคทางเดินอาหาร และรับปรึกษา
+                <br>2.	ตรวจด้วยเครื่องมือพิเศษเพื่อการวินิจฉัย (Diagnostic) และการรักษา (Therapeutic) ได้แก่
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Esophageal varices:</td>
+                                <td>- Rubber band ligation and sclerotherapy<br></td>
+                            </tr>
+                            <tr>
+                                <td>Panenadoscopy:</td>
+                                <td>- Gastric biopsy for peptic ulcer, Heater probe<br>- Alcohol injection for peptic ulcer bleeding<br>- Test for H. pylori infection (CLO test)</td>
+                            </tr>
+                            <tr>
+                                <td>Colonoscopy:</tb>
+                                <td>- Polypectomy, biopsy</td>
+                            </tr>
+                            <tr>
+                                <td>Sigmoidoscopy:</td>
+                                <td>- Biopsy and hemorrhoidal injection</td>
+                            </tr>
+                            <tr>
+                                <td>ERCP:</td>
+                                <td>- Common bile duct stone extraction, biliary drainage via biliary endoprosthesis and nasobiliary tube</td>
+                            </tr>
+                            <tr>
+                                <td>Peritoneoscopy:</td>
+                                <td>- Biopsy of liver, peritoneum</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                <br>3.	คลื่นเสียง (Ultrasound) ตรวจโรคระบบทางเดินอาหา
+                <br>4.	เจาะเลือดตรวจทั่วไปและหาเชื้อไวรัสตับอักเสบ บี
+                <br>5.	คลินิกริดสีดวงทวาร รักษาโดยการฉีด รัดโดยไม่ต้องผ่าตัด
+                <br>6.	คลินิกโรคตับอักเสบจากเชื้อไวรัส
+                <br>7.	คลินิกโรคท้องเดินเรื้อรัง
+                <br>8.	GI motility study
+            </p>
+            <div id="body" class="page-header">
+                <h3>งานวิจัย</h3>
+            </div>
+            <p>อาจารย์แต่ละท่านในสาขาวิชาฯ มิได้ทำงานด้านการเรียนการสอนและบริการเท่านั้น ยังทำการวิจัยได้ผลงานเป็นชื่อเสียงของสาขาวิชาฯ อีกมากมาย งานวิจัยที่เด่นและได้รับคำชมเชยเป็นที่ยอมรับกันทั่วไปทั้งในและต่างประเทศได้แก่
+                <br>- การรักษาโรคมะเร็งตับ เป็นการศึกษาครบวงจร เริ่มตั้งแต่เส้นเลือดที่ไปเลี้ยงตับ: Celiac angiography in 1o liver carcinoma, 
+                การคิดค้นวิธีการรักษาโดยการผูกเส้นเลือดนั้น: Treatment of primary liver carcinoma by hepatic artery ligation, ศึกษาจำนวนเลือดไปเลี้ยงตับก่อนและหลังผูกเส้นเลือด: Regional blood flow of primary liver cancer and effect of hepatic artery ligation, ศึกษาการเกิดเลือดเข้าไปเลี้ยงก้อนมะเร็งใหม่ 
+                ทำให้ผลการรักษาไม่ได้ 100%: Collateral arterial blood supply of the liver after hepatic artery ligation เป็นต้น ผลการวิจัยนี้ ทำให้ ศ.นพ.อุกฤษต์ เปล่งวาณิช และคณะ ได้รับรางวัลนักวิจัยที่มีผลงานวิจัยดีเด่นประจำปี พ.ศ. 2529 ของสภาวิจัยแห่งชาติ
+                <br>- เคมีบำบัดในมะเร็งตับ ทั้ง systemic และ intra arterial one shot therapy 
+                <br>- การแตกของก้อนมะเร็งตับทำให้เกิดเลือดออกในช่องท้อง เสนอวิธีรักษาและตั้งสมมุติฐานการเกิด
+                <br>- การรักษาตับอักเสบในประเทศไทย โดยเฉพาะตับอักเสบเรื้อรังชนิด chronic active hepatitis ที่มีสาเหตุจากไวรัส B, ไวรัส C, ไวรัส G, ไวรัส TTV โดยศึกษาอย่างกว้างขวางตั้งแต่ natural history, genotype ต่างๆ, การรักษาด้วยยาชนิดต่างๆ เป็นต้น
+                <br>- การตรวจสมรรถภาพตับอ่อนในโรคต่างๆ เช่น การตรวจหน้าที่การหลั่ง (Pancreatic Secretin Test) ในโรคเบาหวาน โรคพิษสุราเรื้อรัง โรคตับอ่อนอักเสบเรื้อรัง มะเร็งตับอ่อน และธาลัสซีเมีย
+                <br>- ศึกษาเรื่องของ peptic ulcer (PU) และ non-ulcer dyspepsia (NUD) ผลการรักษาด้วยยาต่างๆ, ความสัมพันธ์ของโรคติดเชื้อ H. pylori ศึกษาทั่วประเทศไทยทั้ง 4 ภาค ดูความเหมือนหรือความแตกต่างในแต่ละภาค การเกิดแผลซ้ำกลับมีความสัมพันธ์กับ H. pylori หรือไม่, 
+                การกำจัดเชื้อ H. pylori ใน PU และ NUD ด้วยยาต่างๆ ดูว่าวิธีใดได้ผลดีที่สุดที่สามารถกำจัดเชื้อได้และสิ้นเปลืองค่าใช้จ่ายน้อยที่สุด
+                <br>- การศึกษา hepatoma ในด้าน natural history, early detection และการรักษา เพื่อควบคุมโรค
+                <br>- การศึกษา chronic diarrhea สาเหตุในประเทศไทย ทั้งในคนปกติและกลุ่มติดเชื้อ
+                <br>- การศึกษา motility ของหลอดอาหารและลำไส้ในโรคต่างๆ</p>
+            <div id="body" class="page-header">
+                <h3>ติดต่อ / สอบถาม</h3>
+            </div>
+            <p> สำนักงาน(ชั่วคราว): อาคารหอพักพยาบาล 3
+                <br>โทรศัพท์: 02-4167282-3 โทรสาร: 02-4115013
+            </p>
+            <div id="header" class="page-header">
+                <h3>อาจารย์ประจำสาขาวิชา</h3>
+            </div>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/k1.jpg" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">รศ.นพ. ทวีศักดิ์ แทนวันดี <br>หัวหน้าสาขา </h4>
+                    <li>หนังสืออนุมัติแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคระบบทางเดินอาหาร</li>
+                    <li>หนังสืออนุมัติแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคระบบทางเดินอาหาร</li>
+                    <li>Certificate Research Fellow in Gastroenterology</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/k2.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">รศ.นพ. สมชาย ลีลากุศลวงศ์ <br>อาจารย์</h4>
+                    <li>Visiting Clinician</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคระบบทางเดินอาหาร</li>
+                    <li>อนุมัติบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาเวชศาสตร์ครอบครัว</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/k3.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">รศ.นพ. สุพจน์ พงศ์ประสบชัย <br>อาจารย์</h4>
+                    <li>Certificate Visiting scientist in Pancreatology</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคระบบทางเดินอาหาร</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์ทั่วไป</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/k4.jpg" class="media-object" style="width:100px">
+                </div>
+                    <div class="post-body">    
+                    <h4 class="media-heading">รศ.นพ. พูลชัย จรัสเจริญวิทยา <br>อาจารย์</h4>
+                    <li>Certificate Research Fellow in Gastroenterology & Hepatology</li>
+                    <li>Master of Biomedical Science Clinical and Translational Science</li>
+                    <li>หนังสืออนุมัติแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาเวชศาสตร์ครอบครัว</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/k5.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">รศ.พญ. นนทลี เผ่าสวัสดิ์ <br>อาจารย์</h4>
+                    <li>Certificate of Advanced Gastrointestinal Endoscopy Fellowship Training</li>
+                    <li>หนังสืออนุมัติแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม อนุสาขาอายุรศาสตร์โรคระบบทางเดินอาหาร</li>
+                    <li>หนังสืออนุมัติแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม อนุสาขาอายุรศาสตร์</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/k6.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-heading">ผศ.พญ. ศิวะพร ไชยนุวัติ <br>อาจารย์</h4>
+                    <li>หนังสืออนุมัติแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรมสาขาอายุรศาสตร์โรคระบบทางเดินอาหาร</li>
+                    <li>หนังสืออนุมัติแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรมสาขาอายุรศาสตร์โรคระบบทางเดินอาหาร</li>
+                    <li>American Board of Gastroenterology</li>
+                    
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/k7.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">รศ.นพ. วรายุ ปรัชญกุล <br>อาจารย์</h4>
+                    <li>Certificate Advanced Therapeutic Endoscopy and Endosonography</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคระบบทางเดินอาหาร</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์ทั่วไป</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/k8.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">รศ.นพ. วัชรศักดิ์ โชติยะปุตตะ <br>อาจารย์พิเศษ </h4>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคระบบทางเดินอาหาร</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                    <li>แพทยศาสตรบัณฑิต (เกียรตินิยมอันดับ 2)</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/k9.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">ผศ.พญ. มณฑิรา มณีรัตนะพร <br>อาจารย์พิเศษ </h4>
+                    <li>Master of Science (Clinical Research Design and Statistical Analysis)</li>
+                    <li>วุฒิบัติแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคระบบทางเดินอาหาร</li>
+                    <li>หนังสืออนุมัติแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาเวชศาสตร์ครอบครัว</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/k10.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">อ.นพ. สุพจน์ นิ่มอนงค์ <br>อาจารย์พิเศษ </h4>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์โรคระบบทางเดินอาหาร</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                    <li>แพทยศาสตรบัณฑิต (เกียรตินิยมอันดับ 1)</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/k11.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">ผศ.นพ. จุลจักร ลิ่มศรีวิไล <br>อาจารย์พิเศษ </h4>
+                    <li>วุฒิบัติแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม อนุสาขาอายุรศาสตร์โรคระบบทางเดินอาหาร</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                    <li>แพทยศาสตรบัณฑิต (เกียรตินิยมอันดับ 1)</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/k12.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">อ.พญ. อวยพร เค้าสมบัติวัฒนา <br>อาจารย์ </h4>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาโรคระบบทางเดินอาหาร</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                    <li>แพทยศาสตรบัณฑิต (เกียรตินิยมอันดับ 1)</li>
+                </div>
+            </article>
+            <article class="widget-post">
+                <div class="post-image">
+                    <img src="images/c/k13.jpg" class="media-object" style="width:100px">
+                </div>
+                <div class="post-body">
+                    <h4 class="media-object">พญ. ทัศนีย์ ศรีประยูร <br>อาจารย์ </h4>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม อนุสาขาอายุรศาสตร์โรคระบบทางเดินอาหาร</li>
+                    <li>อนุมัติบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาเวชศาสตร์ครอบครัว</li>
+                    <li>วุฒิบัตรแสดงความรู้ความชำนาญในการประกอบวิชาชีพเวชกรรม สาขาอายุรศาสตร์</li>
+                </div>
+            </article>
+            <br>
+        </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-socials">
+                <a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" data-toggle="tooltip" title="Instagram"><i class="fa fa-instagram"></i></a>
+                <a href="#" data-toggle="tooltip" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+            </div>			
+            <div class="footer-bottom">
+                <i>ภาควิชาอายุรศาสตร์ รพ.ศิริราช ตึกอัษฎางค์ ชั้น4 แขวงศิริราช เขตบางกอกน้อย กรุงเทพมหานคร 10700 โทร.02-419-7767-69</i>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

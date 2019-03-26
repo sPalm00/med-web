@@ -1,9 +1,9 @@
 <?php
 session_start();
 require 'connection.php';
-date_default_timezone_set("Asia/Manila");
-$date = date("Y-m-d");
-$date_time = date("Y-m-d h:i:s");
+date_default_timezone_set("Asia/Bangkok");
+$date = date("d-m-Y");
+$date_time = date("d-m-Y h:i:s");
 
 $usernameErr = $passwordErr = $current_passwordErr = $new_passwordErr = $repeat_passwordErr = $edit_item_idErr = $item_nameErr = $item_categoryErr = $item_descriptionErr = $item_critical_lvlErr = $quantityErr = $uomErr = $received_by = "";
 $username = $txtpassword  = $current_password  = $new_password  = $repeat_password  = $edit_item_id  = $item_name  = $item_category  = $item_description  = $item_critical_lvl  = $quantity = $received_by = $remarks = "";
@@ -88,20 +88,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $received_by = clean($_POST["received_by"]);
     }
-
-
 }   
 
-
 if(isset($_POST['login'])){
-    $sql = "SELECT * FROM tbl_user WHERE username='$username'";
+    $sql = "SELECT * FROM db_user WHERE username='$username'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
             if($row['password'] == $txtpassword){
                 $_SESSION['user_name'] = $row['username'];
-                $_SESSION['role'] = $row['role'];
+                $_SESSION['status'] = $row['status'];
                 header("location:inventory.php");
             } else {
                 $passwordErr = '<div class="alert alert-warning">
