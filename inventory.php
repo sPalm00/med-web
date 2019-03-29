@@ -210,7 +210,7 @@ if(empty($_SESSION['user_name'])){
                     </div>
                 </tr>
                 <?php
-                        }
+                {
                         if(isset($_POST['change_pass'])){
                             $sql = "SELECT password FROM db_user WHERE username='$session_username'";
                             $result = $conn->query($sql);
@@ -238,7 +238,6 @@ if(empty($_SESSION['user_name'])){
                                 $username = "";
                             }
                         }
-
 
                         if(isset($_POST['update_item'])){
                             $news_name = $_POST['news_name'];
